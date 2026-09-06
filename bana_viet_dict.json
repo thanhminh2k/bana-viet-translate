@@ -1,0 +1,5853 @@
+[
+{
+"bana": "Ai",
+"viet": "Số phận"
+},
+{
+"bana": "Ai kojung",
+"viet": "Tốt số"
+},
+{
+"bana": "Ak",
+"viet": "Con quạ"
+},
+{
+"bana": "Ak",
+"viet": "Qụa"
+},
+{
+"bana": "Ak găm",
+"viet": "Quạ đen"
+},
+{
+"bana": "Akap",
+"viet": "Cái bẫy"
+},
+{
+"bana": "Akap kone",
+"viet": "Bẫy chuột"
+},
+{
+"bana": "Akap sem",
+"viet": "Bẫy chim"
+},
+{
+"bana": "Akap",
+"viet": "Bẫy"
+},
+{
+"bana": "anăk",
+"viet": "Bẫy"
+},
+{
+"bana": "Akar axeh",
+"viet": "Da ngựa"
+},
+{
+"bana": "Akar Djrang",
+"viet": "Da báo"
+},
+{
+"bana": "Akar kiěk",
+"viet": "Da hổ"
+},
+{
+"bana": "Akar klăn",
+"viet": "Da trăn"
+},
+{
+"bana": "Akar kopô",
+"viet": "Da trâu"
+},
+{
+"bana": "Akar romo",
+"viet": "Da bò"
+},
+{
+"bana": "Akar",
+"viet": "Da, vỏ"
+},
+{
+"bana": "kođoh",
+"viet": "Da, vỏ"
+},
+{
+"bana": "Ake",
+"viet": "Cái sừng"
+},
+{
+"bana": "Ake",
+"viet": "Sừng"
+},
+{
+"bana": "Ake kopô",
+"viet": "Sừng trâu"
+},
+{
+"bana": "Ake juěi",
+"viet": "Gạc nai"
+},
+{
+"bana": "Ake kotöng",
+"viet": "Sừng hươu"
+},
+{
+"bana": "Ake krŭ",
+"viet": "Sừng bò tót"
+},
+{
+"bana": "Ake mim",
+"viet": "Sừng tê giác"
+},
+{
+"bana": "Ake rơ mo",
+"viet": "Sừng bò"
+},
+{
+"bana": "Ako",
+"viet": "Cái cổ"
+},
+{
+"bana": "Ako",
+"viet": "Cổ"
+},
+{
+"bana": "hơko",
+"viet": "Cổ"
+},
+{
+"bana": "Akoh",
+"viet": "Sàn"
+},
+{
+"bana": "Akoh",
+"viet": "Sạp"
+},
+{
+"bana": "Akoh hnam kơ jung",
+"viet": "Sàn nhà"
+},
+{
+"bana": "drơh",
+"viet": "Sàn nhà"
+},
+{
+"bana": "Akoh sut",
+"viet": "Sáp ong"
+},
+{
+"bana": "jrěnh",
+"viet": "Sáp ong"
+},
+{
+"bana": "sal sut",
+"viet": "Sáp ong"
+},
+{
+"bana": "Akoh",
+"viet": "Sáp"
+},
+{
+"bana": "sal",
+"viet": "Sáp"
+},
+{
+"bana": "Akm chă pôm đon",
+"viet": "Hiệp thương"
+},
+{
+"bana": "Akou",
+"viet": "Cơ thể"
+},
+{
+"bana": "Akou kodih",
+"viet": "Bản thân"
+},
+{
+"bana": "kodih angla",
+"viet": "Bản thân"
+},
+{
+"bana": "Akou",
+"viet": "Tập trung"
+},
+{
+"bana": "jơnŭm đi đăng",
+"viet": "Tập trung"
+},
+{
+"bana": "pogou",
+"viet": "Tập trung"
+},
+{
+"bana": "hơ kŭn",
+"viet": "Tập trung"
+},
+{
+"bana": "Akôih sök",
+"viet": "Cạo lông"
+},
+{
+"bana": "Akôih sök kang",
+"viet": "Cạo râu"
+},
+{
+"bana": "hokôih sök kang",
+"viet": "Cạo râu"
+},
+{
+"bana": "Akôih sök nhüng",
+"viet": "Cạo lông lợn"
+},
+{
+"bana": "Along ba",
+"viet": "Cây lúa"
+},
+{
+"bana": "Along bơ o",
+"viet": "Lồ ô"
+},
+{
+"bana": "Along grê",
+"viet": "Cây nghiêng"
+},
+{
+"bana": "Alonh khôih",
+"viet": "Cây dẻ"
+},
+{
+"bana": "along pohe",
+"viet": "Cây dẻ"
+},
+{
+"bana": "Alo",
+"viet": "Lớn",
+"example": "Kon anhong alo sonăm ưh?"
+},
+{
+"bana": "Alô",
+"viet": "A lô"
+},
+{
+"bana": "Alô",
+"viet": "Cái loa"
+},
+{
+"bana": "Alo alâng",
+"viet": "Cẩn thận"
+},
+{
+"bana": "po alâng",
+"viet": "Cẩn thận"
+},
+{
+"bana": "Alop",
+"viet": "Trẻ"
+},
+{
+"bana": "alâp",
+"viet": "Trẻ"
+},
+{
+"bana": "Amăn tơ mam",
+"viet": "Cất của"
+},
+{
+"bana": "Amăn",
+"viet": "Cất, để"
+},
+{
+"bana": "ming",
+"viet": "Cất, để"
+},
+{
+"bana": "Amăng",
+"viet": "Cổng"
+},
+{
+"bana": "Amăng",
+"viet": "Cửa"
+},
+{
+"bana": "Amăng blŭng",
+"viet": "Ban đầu"
+},
+{
+"bana": "Amăng blŭng",
+"viet": "Bắt đầu"
+},
+{
+"bana": "pơ tơm",
+"viet": "Bắt đầu"
+},
+{
+"bana": "Amăng blŭng",
+"viet": "Đầu tiên"
+},
+{
+"bana": "kogol",
+"viet": "Đầu tiên"
+},
+{
+"bana": "blung",
+"viet": "Đầu tiên"
+},
+{
+"bana": "Amăng hnam",
+"viet": "Cửa nhà"
+},
+{
+"bana": "Amăng amok",
+"viet": "Cửa sổ"
+},
+{
+"bana": "Amăng polěi",
+"viet": "Cổng làng"
+},
+{
+"bana": "Amăng tăm p- phi zữ.",
+"viet": "Lập tức"
+},
+{
+"bana": "Amăng yang",
+"viet": "Cổng trời"
+},
+{
+"bana": "Amâm",
+"viet": "Ngậm"
+},
+{
+"bana": "amom",
+"viet": "Ngậm"
+},
+{
+"bana": "tong",
+"viet": "Ngậm"
+},
+{
+"bana": "Ame",
+"viet": "Đút"
+},
+{
+"bana": "Ame ăn oh",
+"viet": "Cho em ăn"
+},
+{
+"bana": "Ameh đök",
+"viet": "Thích đọc"
+},
+{
+"bana": "Ameh hiěk",
+"viet": "Buồn cười"
+},
+{
+"bana": "Ameh hiěk",
+"viet": "Ngồ ngộ"
+},
+{
+"bana": "Ameh tep",
+"viet": "Buồn ngủ"
+},
+{
+"bana": "Ameh wă",
+"viet": "Ham thích"
+},
+{
+"bana": "Ameh wă",
+"viet": "Khao khát"
+},
+{
+"bana": "Aměh",
+"viet": "Thích"
+},
+{
+"bana": "lŭ",
+"viet": "Thích"
+},
+{
+"bana": "Amě",
+"viet": "Ô nhiễm"
+},
+{
+"bana": "Amě amach",
+"viet": "Bẩn thỉu"
+},
+{
+"bana": "Amě hnam",
+"viet": "Bẩn nhà"
+},
+{
+"bana": "Amě jâng",
+"viet": "Bẩn chân"
+},
+{
+"bana": "Amě mach",
+"viet": "Ô uế"
+},
+{
+"bana": "Amě sôm ao",
+"viet": "Bẩn quần áo"
+},
+{
+"bana": "Amě ti",
+"viet": "bẩn tay"
+},
+{
+"bana": "Amě tomam",
+"viet": "Bẩn đồ"
+},
+{
+"bana": "Amě",
+"viet": "Dơ bẩn"
+},
+{
+"bana": "podơr",
+"viet": "Dơ bẩn"
+},
+{
+"bana": "Amêm bonat",
+"viet": "Yêu thương"
+},
+{
+"bana": "Amêm kơ eng",
+"viet": "Yêu mến"
+},
+{
+"bana": "Ami",
+"viet": "Cơn mưa"
+},
+{
+"bana": "Ami",
+"viet": "Mưa"
+},
+{
+"bana": "Ami hngach",
+"viet": "Mưa dầm"
+},
+{
+"bana": "Ami hngach",
+"viet": "Mưa ngâu"
+},
+{
+"bana": "Ami hngach",
+"viet": "Mưa phùn"
+},
+{
+"bana": "Ami hohŭt",
+"viet": "Bão tố"
+},
+{
+"bana": "Ami hohŭt",
+"viet": "Mưa bão"
+},
+{
+"bana": "Ami hohŭt tih",
+"viet": "Bão táp"
+},
+{
+"bana": "Ami hohŭt",
+"viet": "Bão"
+},
+{
+"bana": "hobŭt",
+"viet": "Bão"
+},
+{
+"bana": "Ami prěl",
+"viet": "Mưa đá"
+},
+{
+"bana": "Ami pru",
+"viet": "Mưa rào"
+},
+{
+"bana": "Ami pru",
+"viet": "Mưa ròng"
+},
+{
+"bana": "Amin",
+"viet": "Åm"
+},
+{
+"bana": "Amil",
+"viet": "Gương"
+},
+{
+"bana": "Amin ayök",
+"viet": "Ảm lấy"
+},
+{
+"bana": "amin ičk",
+"viet": "Ảm lấy"
+},
+{
+"bana": "Amin oh",
+"viet": "Åm em"
+},
+{
+"bana": "pôk",
+"viet": "Åm em"
+},
+{
+"bana": "Amin",
+"viet": "Ăm"
+},
+{
+"bana": "Amn ayok",
+"viet": "Ăm lấy"
+},
+{
+"bana": "Amin oh",
+"viet": "Ăm em"
+},
+{
+"bana": "pôk",
+"viet": "Ăm em"
+},
+{
+"bana": "Amlaih",
+"viet": "Hối hận"
+},
+{
+"bana": "Amlaih dêh đg",
+"viet": "Tiếc lắm"
+},
+{
+"bana": "Among đg",
+"viet": "Trả nợ"
+},
+{
+"bana": "Amonh tolěi",
+"viet": "Bện dây"
+},
+{
+"bana": "koxěnh tolěi",
+"viet": "Bện dây"
+},
+{
+"bana": "kŭi tơ lěi",
+"viet": "Bện dây"
+},
+{
+"bana": "Amonh",
+"viet": "Bện"
+},
+{
+"bana": "kơxěnh",
+"viet": "Bện"
+},
+{
+"bana": "Amônh đĩ",
+"viet": "Dễ hết"
+},
+{
+"bana": "Amônh hach",
+"viet": "Dễ tàn"
+},
+{
+"bana": "Amônh kơlôch",
+"viet": "Dễ chết"
+},
+{
+"bana": "Amônh",
+"viet": "Dễ"
+},
+{
+"bana": "bônh t",
+"viet": "Dễ"
+},
+{
+"bana": "Amơn",
+"viet": "Với"
+},
+{
+"bana": "Amơng",
+"viet": "Làm ngơ"
+},
+{
+"bana": "Amăi",
+"viet": "Đã"
+},
+{
+"bana": "kah",
+"viet": "Đã"
+},
+{
+"bana": "hlôi",
+"viet": "Đã"
+},
+{
+"bana": "Amră",
+"viet": "Công"
+},
+{
+"bana": "Amră",
+"viet": "Con công"
+},
+{
+"bana": "hơ mră",
+"viet": "Con công"
+},
+{
+"bana": "Amrě angam",
+"viet": "Ớt ngọt"
+},
+{
+"bana": "Adrěch sodang",
+"viet": "Dân tộc Sê Đăng"
+},
+{
+"bana": "Adral",
+"viet": "Ranh giới"
+},
+{
+"bana": "holam",
+"viet": "Ranh giới"
+},
+{
+"bana": "Adrăl",
+"viet": "Bất tử"
+},
+{
+"bana": "Adrăl",
+"viet": "Tỉnh táo"
+},
+{
+"bana": "hodrăl",
+"viet": "Tỉnh táo"
+},
+{
+"bana": "Adrěch bongai",
+"viet": "Dân tộc"
+},
+{
+"bana": "Adrěng ka",
+"viet": "Chiên cá"
+},
+{
+"bana": "Adrěng kotăp",
+"viet": "Chiên trứng"
+},
+{
+"bana": "Adrěng tơh",
+"viet": "Chiên đậu"
+},
+{
+"bana": "Adrěch drung",
+"viet": "Họ hàng"
+},
+{
+"bana": "kotum",
+"viet": "Họ hàng"
+},
+{
+"bana": "Adrěch hobo",
+"viet": "Giống ngô"
+},
+{
+"bana": "Adrěch ba",
+"viet": "Giống lúa"
+},
+{
+"bana": "hodrěch ba",
+"viet": "Giống lúa"
+},
+{
+"bana": "Adrěch",
+"viet": "Giống"
+},
+{
+"bana": "hodrěch",
+"viet": "Giống"
+},
+{
+"bana": "Adrěng",
+"viet": "Chiên"
+},
+{
+"bana": "Adrěng",
+"viet": "Rán"
+},
+{
+"bana": "Adrěng ka",
+"viet": "Rán cá"
+},
+{
+"bana": "Adrin drăi",
+"viet": "Gắng gượng"
+},
+{
+"bana": "Adrin",
+"viet": "Chịu khó"
+},
+{
+"bana": "chiu anat",
+"viet": "Chịu khó"
+},
+{
+"bana": "Adrin",
+"viet": "Cố gắng"
+},
+{
+"bana": "hodrin",
+"viet": "Cố gắng"
+},
+{
+"bana": "khöm adrin",
+"viet": "Cố gắng"
+},
+{
+"bana": "Adrih",
+"viet": "Tươi"
+},
+{
+"bana": "Adrih",
+"viet": "Tươi sống"
+},
+{
+"bana": "Adro",
+"viet": "Ve"
+},
+{
+"bana": "Adro axi",
+"viet": "Ve kêu"
+},
+{
+"bana": "Adro kăn",
+"viet": "Goá vợ"
+},
+{
+"bana": "hodro ko akăn",
+"viet": "Goá vợ"
+},
+{
+"bana": "Adro klo",
+"viet": "Goá chồng"
+},
+{
+"bana": "Adrol",
+"viet": "Nháp"
+},
+{
+"bana": "Adrő drăn",
+"viet": "Cô độc"
+},
+{
+"bana": "Adro",
+"viet": "Một mình"
+},
+{
+"bana": "hơ drỗ",
+"viet": "Một mình"
+},
+{
+"bana": "minh drỗ",
+"viet": "Một mình"
+},
+{
+"bana": "Adro",
+"viet": "Xốc"
+},
+{
+"bana": "Adrom",
+"viet": "Để cho"
+},
+{
+"bana": "Adrăm ăn sư",
+"viet": "Để cho nó"
+},
+{
+"bana": "Adruh",
+"viet": "Thanh nữ"
+},
+{
+"bana": "Adruh",
+"viet": "Thiếu nữ"
+},
+{
+"bana": "Adrŭng kč",
+"viet": "Ổ chó"
+},
+{
+"bana": "Adrŭg",
+"viet": "Xóc"
+},
+{
+"bana": "Adrŭng",
+"viet": "Ố",
+"example": "Hnam inh đěi bar to adŭng iěr"
+},
+{
+"bana": "hodrng",
+"viet": "Ố",
+"example": "Hnam inh đěi bar to adŭng iěr"
+},
+{
+"bana": "Agăm anhăng oh",
+"viet": "Loạn luân"
+},
+{
+"bana": "agăm g",
+"viet": "Loạn luân"
+},
+{
+"bana": "Aguăt",
+"viet": "Bọ cạp"
+},
+{
+"bana": "toguăt",
+"viet": "Bọ cạp"
+},
+{
+"bana": "Ahrěi",
+"viet": "Hiện tại"
+},
+{
+"bana": "Aně",
+"viet": "Đừng"
+},
+{
+"bana": "ně",
+"viet": "Đừng"
+},
+{
+"bana": "Ang",
+"viet": "Ánh sáng"
+},
+{
+"bana": "Ang",
+"viet": "Ca ngợi"
+},
+{
+"bana": "pơ ư",
+"viet": "Ca ngợi"
+},
+{
+"bana": "hori bonê",
+"viet": "Ca ngợi"
+},
+{
+"bana": "Angam",
+"viet": "Ngọt"
+},
+{
+"bana": "Angam sik",
+"viet": "Ngọt đường"
+},
+{
+"bana": "Angam băt",
+"viet": "Ngọt ngào"
+},
+{
+"bana": "Angam blě",
+"viet": "Ngọt xớt"
+},
+{
+"bana": "Angiěo",
+"viet": "Bồ hóng"
+},
+{
+"bana": "Angiěo",
+"viet": "Trái"
+},
+{
+"bana": "Angiět",
+"viet": "Cỏ"
+},
+{
+"bana": "Angiět adrih",
+"viet": "Cỏ tươi"
+},
+{
+"bana": "Angiět kro",
+"viet": "Cỏ khô"
+},
+{
+"bana": "Angok",
+"viet": "Não"
+},
+{
+"bana": "Angok",
+"viet": "Óc"
+},
+{
+"bana": "Angok bongai",
+"viet": "Não người"
+},
+{
+"bana": "Angok bongai",
+"viet": "Óc người"
+},
+{
+"bana": "Angok đök",
+"viet": "Óc khỉ"
+},
+{
+"bana": "Angok kö",
+"viet": "Óc chó"
+},
+{
+"bana": "Angok nhŭng",
+"viet": "Óc lợn"
+},
+{
+"bana": "Angok rơmo",
+"viet": "Óc bò"
+},
+{
+"bana": "Angok sem bri",
+"viet": "Não thú"
+},
+{
+"bana": "Angôch",
+"viet": "Trọc"
+},
+{
+"bana": "Angơn",
+"viet": "Ngẩng"
+},
+{
+"bana": "Angơn",
+"viet": "Vươn"
+},
+{
+"bana": "Angơn akou",
+"viet": "Vươn mình"
+},
+{
+"bana": "Angơn kơl",
+"viet": "Ngẩng đầu"
+},
+{
+"bana": "Angơn năng",
+"viet": "Ngẩng xem"
+},
+{
+"bana": "Anguaih",
+"viet": "Dọn sạch"
+},
+{
+"bana": "Anguaih",
+"viet": "Ngoài"
+},
+{
+"bana": "Anhanh anhap",
+"viet": "Lảo đảo"
+},
+{
+"bana": "Anhao măt",
+"viet": "Rửa mặt"
+},
+{
+"bana": "Anhao",
+"viet": "Rửa"
+},
+{
+"bana": "chho",
+"viet": "Rửa"
+},
+{
+"bana": "Anhek hât",
+"viet": "Nhựa thuốc"
+},
+{
+"bana": "Anhek tăng",
+"viet": "Nhựa điếu"
+},
+{
+"bana": "Anhěm iěr",
+"viet": "Thịt gà"
+},
+{
+"bana": "Anheng běng",
+"viet": "Thèm bánh"
+},
+{
+"bana": "Anheng",
+"viet": "Thèm"
+},
+{
+"bana": "kröddg",
+"viet": "Thèm"
+},
+{
+"bana": "Anhěp măt",
+"viet": "Khinh bỉ"
+},
+{
+"bana": "hơ reh",
+"viet": "Khinh bỉ"
+},
+{
+"bana": "areh",
+"viet": "Khinh bỉ"
+},
+{
+"bana": "Anih alâng",
+"viet": "Nơi tốt"
+},
+{
+"bana": "Anih amăn atou",
+"viet": "Bãi tha ma"
+},
+{
+"bana": "Anih arih sa",
+"viet": "Nơi sinh sống"
+},
+{
+"bana": "Anih botho",
+"viet": "Lớp học"
+},
+{
+"bana": "Anih donč",
+"viet": "Nơi chốn"
+},
+{
+"bana": "Anih tơ nơm ioh soang",
+"viet": "Bộ Văn hoá"
+},
+{
+"bana": "Anih jang",
+"viet": "Nơi làm việc"
+},
+{
+"bana": "Anih jang sa d",
+"viet": "Bộ nông nghiệp"
+},
+{
+"bana": "Anih khăm lăng j",
+"viet": "Phòng Y tế"
+},
+{
+"bana": "Anih kodră",
+"viet": "Chỗ lãnh đạo"
+},
+{
+"bana": "Anih kodră botho pojing",
+"viet": "Bộ Giáo dục"
+},
+{
+"bana": "Anih kojung",
+"viet": "Chỗ cao cấp"
+},
+{
+"bana": "Anih kotă",
+"viet": "Nguyên quán"
+},
+{
+"bana": "Anih oěi",
+"viet": "Địa chỉ"
+},
+{
+"bana": "Anih oěi",
+"viet": "Thường trú"
+},
+{
+"bana": "juăt oěi",
+"viet": "Thường trú"
+},
+{
+"bana": "Anih oěi",
+"viet": "Chỗ ở"
+},
+{
+"bana": "Anih oěi",
+"viet": "Trú quán"
+},
+{
+"bana": "Anih polôch",
+"viet": "Pháp trường"
+},
+{
+"bana": "Anih pơm",
+"viet": "Phương pháp"
+},
+{
+"bana": "Anih potao",
+"viet": "Ngai vàng"
+},
+{
+"bana": "Anih rogiěo",
+"viet": "Đài phát thanh"
+},
+{
+"bana": "Anih roneh",
+"viet": "Nơi sinh"
+},
+{
+"bana": "Anih tep",
+"viet": "Phòng ngủ"
+},
+{
+"bana": "Anih tơm joh suang",
+"viet": "Sở Văn hoá"
+},
+{
+"bana": "Anih tơm pogang",
+"viet": "Sở Y tế"
+},
+{
+"bana": "Anih tơm potâp plăng pơpěnh",
+"viet": "Sở Thể dục Thể thao"
+},
+{
+"bana": "Anih truh",
+"viet": "Đích"
+},
+{
+"bana": "Anih wěi jên",
+"viet": "Ngân hàng"
+},
+{
+"bana": "Anih wěi todrong botho",
+"viet": "Phòng Giáo dục-Đào tạo"
+},
+{
+"bana": "Anoh",
+"viet": "Đó đây"
+},
+{
+"bana": "Anoh",
+"viet": "Kia"
+},
+{
+"bana": "Anoh",
+"viet": "Tự hào"
+},
+{
+"bana": "ư ang",
+"viet": "Tự hào"
+},
+{
+"bana": "Anoh hěi",
+"viet": "Ban nãy"
+},
+{
+"bana": "Anoh",
+"viet": "Đấy"
+},
+{
+"bana": "klâp",
+"viet": "Đấy"
+},
+{
+"bana": "Anoh",
+"viet": "Đó"
+},
+{
+"bana": "noh",
+"viet": "Đó"
+},
+{
+"bana": "Anong",
+"viet": "Rạ, rơm"
+},
+{
+"bana": "Anong đak",
+"viet": "Gánh nước"
+},
+{
+"bana": "Anong todrong jang",
+"viet": "Gánh nhiệm vụ"
+},
+{
+"bana": "Atol hlakơ",
+"viet": "Treo cờ"
+},
+{
+"bana": "hotol hlako đg",
+"viet": "Treo cờ"
+},
+{
+"bana": "Atol",
+"viet": "Treo"
+},
+{
+"bana": "hotol",
+"viet": "Treo"
+},
+{
+"bana": "tol",
+"viet": "Treo"
+},
+{
+"bana": "Atop",
+"viet": "Gói, bò sát-"
+},
+{
+"bana": "Atop hât",
+"viet": "Bó thuốc"
+},
+{
+"bana": "Atop hât d",
+"viet": "Gói thuốc"
+},
+{
+"bana": "Ato băl",
+"viet": "Bằng nhau"
+},
+{
+"bana": "dang ăi",
+"viet": "Bằng nhau"
+},
+{
+"bana": "hoto",
+"viet": "Bằng nhau"
+},
+{
+"bana": "dôm ăi",
+"viet": "Bằng nhau"
+},
+{
+"bana": "Ato",
+"viet": "Bằng"
+},
+{
+"bana": "dang",
+"viet": "Bằng"
+},
+{
+"bana": "Atok đg",
+"viet": "Đưa lên"
+},
+{
+"bana": "Atök kojung",
+"viet": "Nâng cao"
+},
+{
+"bana": "Atok lăm",
+"viet": "Lên lớp"
+},
+{
+"bana": "Atök lăm gre",
+"viet": "Lên xe"
+},
+{
+"bana": "hao gre",
+"viet": "Lên xe"
+},
+{
+"bana": "Atăng",
+"viet": "Cuống"
+},
+{
+"bana": "Atöng hla",
+"viet": "Cuống lá"
+},
+{
+"bana": "Atong plěi along",
+"viet": "Cuống quả"
+},
+{
+"bana": "Avăt",
+"viet": "Chim cút"
+},
+{
+"bana": "Ayăt",
+"viet": "Giặc"
+},
+{
+"bana": "Ayăt",
+"viet": "Kẻ thù"
+},
+{
+"bana": "Axeh",
+"viet": "Con ngựa"
+},
+{
+"bana": "Axeh d",
+"viet": "Ngựa"
+},
+{
+"bana": "Axeh akăn",
+"viet": "Ngựa cái"
+},
+{
+"bana": "Axeh brông",
+"viet": "Ngựa vằn"
+},
+{
+"bana": "Axeh duih gre",
+"viet": "Ngựa kéo xe"
+},
+{
+"bana": "Axeh găm",
+"viet": "Ngựa đen"
+},
+{
+"bana": "Axeh hơi",
+"viet": "Ngựa bạch"
+},
+{
+"bana": "Axeh kotong",
+"viet": "Ngựa đá"
+},
+{
+"bana": "axeh kodah",
+"viet": "Ngựa đá"
+},
+{
+"bana": "Axeh tê",
+"viet": "Ngựa phi"
+},
+{
+"bana": "Axeh tono",
+"viet": "Ngựa đực"
+},
+{
+"bana": "Axêng",
+"viet": "Cái nong"
+},
+{
+"bana": "sêng",
+"viet": "Cái nong"
+},
+{
+"bana": "Áxi",
+"viet": "Kêu"
+},
+{
+"bana": "tokěch",
+"viet": "Kêu"
+},
+{
+"bana": "Axong",
+"viet": "Ban phát"
+},
+{
+"bana": "Axong bonê",
+"viet": "Ban tặng"
+},
+{
+"bana": "Axong khl",
+"viet": "Chia nhóm"
+},
+{
+"bana": "Ayom",
+"viet": "Hiền"
+},
+{
+"bana": "iâm",
+"viet": "Hiền"
+},
+{
+"bana": "Ayuh",
+"viet": "Bốc hơi"
+},
+{
+"bana": "Ayuh",
+"viet": "Khí"
+},
+{
+"bana": "Ayuh năr",
+"viet": "Khí trời"
+},
+{
+"bana": "Ayuh đak",
+"viet": "Hơi nước"
+},
+{
+"bana": "hoyuh đak",
+"viet": "Hơi nước"
+},
+{
+"bana": "Ayuh poyan",
+"viet": "Khí tượng"
+},
+{
+"bana": "Anong ba",
+"viet": "Rạ lúa -"
+},
+{
+"bana": "Anonh sök",
+"viet": "Bện tóc"
+},
+{
+"bana": "Anou ji",
+"viet": "Đây là"
+},
+{
+"bana": "ču ji",
+"viet": "Đây là"
+},
+{
+"bana": "Anou",
+"viet": "Đây"
+},
+{
+"bana": "he",
+"viet": "Đây"
+},
+{
+"bana": "Anŭng",
+"viet": "Bọc"
+},
+{
+"bana": "Anŭng anhěm",
+"viet": "Gói thịt"
+},
+{
+"bana": "Anŭng mơh",
+"viet": "Bọc cơm"
+},
+{
+"bana": "Anŭng",
+"viet": "Gói"
+},
+{
+"bana": "Anŭng mơ",
+"viet": "Gói cơm"
+},
+{
+"bana": "anŭng pddg đg",
+"viet": "Gói cơm"
+},
+{
+"bana": "Ao",
+"viet": "Áo"
+},
+{
+"bana": "Ao ami",
+"viet": "Áo mưa"
+},
+{
+"bana": "Ao djăl",
+"viet": "Áo cộc"
+},
+{
+"bana": "Ao dơ dui ti tai",
+"viet": "Áo thun tay dài"
+},
+{
+"bana": "Ao đâm",
+"viet": "Áo đầm"
+},
+{
+"bana": "Ao hoayuh djơ djih",
+"viet": "Áo ướt đẫm"
+},
+{
+"bana": "Ao hotăng",
+"viet": "Áo mỏng"
+},
+{
+"bana": "Ao hrăt",
+"viet": "Áo chật"
+},
+{
+"bana": "Ao kom plê",
+"viet": "Áo com lê"
+},
+{
+"bana": "Ao kơ jung",
+"viet": "Áo dài"
+},
+{
+"bana": "Ao koteh",
+"viet": "Áo thêu"
+},
+{
+"bana": "Ao lom kotih",
+"viet": "Yếm"
+},
+{
+"bana": "Ao phok",
+"viet": "Áo mốc"
+},
+{
+"bana": "Ao pokao",
+"viet": "Áo hoa"
+},
+{
+"bana": "Ao rohơi",
+"viet": "Áo rộng"
+},
+{
+"bana": "Ao sak",
+"viet": "Áo len, áo khoác"
+},
+{
+"bana": "Ao sơ mi",
+"viet": "Áo sơ mi"
+},
+{
+"bana": "Ao tăr",
+"viet": "Áo mi ô"
+},
+{
+"bana": "Ao ti djăl",
+"viet": "Áo cộc tay"
+},
+{
+"bana": "Ao ti tai",
+"viet": "Áo dài tay"
+},
+{
+"bana": "Ao tơno",
+"viet": "Áo ấm"
+},
+{
+"bana": "Ao tơno",
+"viet": "Áo khoác"
+},
+{
+"bana": "ao bang bă",
+"viet": "Áo khoác"
+},
+{
+"bana": "Ao trôk",
+"viet": "Áo dơ"
+},
+{
+"bana": "Ao wet",
+"viet": "Áo vét"
+},
+{
+"bana": "Apah",
+"viet": "Trả công"
+},
+{
+"bana": "Apah bơnê",
+"viet": "Phần thưởng"
+},
+{
+"bana": "Apah jang",
+"viet": "Trả công làm"
+},
+{
+"bana": "Apinh",
+"viet": "Hỏi xin"
+},
+{
+"bana": "Apinh",
+"viet": "Xin"
+},
+{
+"bana": "Anhěm",
+"viet": "Thịt"
+},
+{
+"bana": "Anhěm adrih",
+"viet": "Thịt tươi"
+},
+{
+"bana": "Anhěm hopok",
+"viet": "Thịt thăn"
+},
+{
+"bana": "Anhěm nhung",
+"viet": "Thịt heo"
+},
+{
+"bana": "Anhěm romo",
+"viet": "Thịt bò"
+},
+{
+"bana": "Anhě",
+"viet": "Dễ khóc"
+},
+{
+"bana": "Anhiět đah",
+"viet": "Cỏ mọc"
+},
+{
+"bana": "Anhik",
+"viet": "Cái cuốc"
+},
+{
+"bana": "Anhik chơlêng",
+"viet": "Cuốc lớn"
+},
+{
+"bana": "Anhik rơ uơ",
+"viet": "Cái cày"
+},
+{
+"bana": "rơ uơ",
+"viet": "Cái cày"
+},
+{
+"bana": "Anhik wăng",
+"viet": "Cuốc cào"
+},
+{
+"bana": "Anhik",
+"viet": "Cuố"
+},
+{
+"bana": "Anhip",
+"viet": "Nhắm mắt"
+},
+{
+"bana": "hiưp",
+"viet": "Nhắm mắt"
+},
+{
+"bana": "Anhöng alâng akou",
+"viet": "Đẹp trai"
+},
+{
+"bana": "Anhöng alâng ro",
+"viet": "Anh đẹp trai"
+},
+{
+"bana": "Anhöng bôl buăl",
+"viet": "Anh bạn"
+},
+{
+"bana": "Anhong dăm",
+"viet": "Anh chàng"
+},
+{
+"bana": "Anhong kodră",
+"viet": "Anh cả"
+},
+{
+"bana": "Anhong mai pôm bă mě",
+"viet": "Anh chị"
+},
+{
+"bana": "Anhong oh pôm bă mě",
+"viet": "Anh em"
+},
+{
+"bana": "Anhot",
+"viet": "Rau"
+},
+{
+"bana": "Anhot hla soběi",
+"viet": "Rau cải"
+},
+{
+"bana": "Anhot",
+"viet": "Canh"
+},
+{
+"bana": "Anhong",
+"viet": "Anh"
+},
+{
+"bana": "Anhöng anoh",
+"viet": "Anh đó"
+},
+{
+"bana": "Anhong anoh",
+"viet": "Anh kia"
+},
+{
+"bana": "Anhong oh pôm mẽ bă",
+"viet": "Anh em ruột"
+},
+{
+"bana": "Anhong oh pôm yă bok",
+"viet": "Anh em họ"
+},
+{
+"bana": "Anhong oh pôm yă bok",
+"viet": "Anh em thúc bá"
+},
+{
+"bana": "Anhong ču",
+"viet": "Anh này"
+},
+{
+"bana": "Anhrong",
+"viet": "Đoạn cây"
+},
+{
+"bana": "Anhrơng anhrât",
+"viet": "Ngập ngừng"
+},
+{
+"bana": "Anhui",
+"viet": "Khói"
+},
+{
+"bana": "Anhui golŭng",
+"viet": "Khói um"
+},
+{
+"bana": "anhui kolŭng",
+"viet": "Khói um"
+},
+{
+"bana": "Anhui hờt",
+"viet": "Khói thuốc"
+},
+{
+"bana": "Anhui ŭnh",
+"viet": "Khói lửa"
+},
+{
+"bana": "Anih",
+"viet": "Chỗ"
+},
+{
+"bana": "Anih",
+"viet": "Nơi"
+},
+{
+"bana": "Bơměnh go",
+"viet": "Nhọ nồi"
+},
+{
+"bana": "Bơmgai chữ",
+"viet": "Người xấu"
+},
+{
+"bana": "Bơmông",
+"viet": "Lễ tang không hài cốt"
+},
+{
+"bana": "Bơmot",
+"viet": "Hướng tây"
+},
+{
+"bana": "Bơmreh",
+"viet": "Nhánh tre"
+},
+{
+"bana": "Bona",
+"viet": "Tù binh"
+},
+{
+"bana": "Boneh",
+"viet": "Tối đa"
+},
+{
+"bana": "poneh",
+"viet": "Tối đa"
+},
+{
+"bana": "Bơnê",
+"viet": "Cám ơn"
+},
+{
+"bana": "Bơnê",
+"viet": "Khen"
+},
+{
+"bana": "Bonê kră alo",
+"viet": "Mừng thọ"
+},
+{
+"bana": "Bonê",
+"viet": "Cảm ơn"
+},
+{
+"bana": "ponê",
+"viet": "Cảm ơn"
+},
+{
+"bana": "Bơng",
+"viet": "Bể"
+},
+{
+"bana": "Bơng",
+"viet": "Cái bể"
+},
+{
+"bana": "Bơng",
+"viet": "Cái máng"
+},
+{
+"bana": "Bong đak",
+"viet": "Bể nước"
+},
+{
+"bana": "Bơng glơi",
+"viet": "Bể bơi"
+},
+{
+"bana": "Bơng ka",
+"viet": "Bể cá"
+},
+{
+"bana": "Bơng những",
+"viet": "Máng heo"
+},
+{
+"bana": "Bongai",
+"viet": "Người -"
+},
+{
+"bana": "Bongai alâng",
+"viet": "Người tốt"
+},
+{
+"bana": "Bongai alop",
+"viet": "Trẻ con -"
+},
+{
+"bana": "Bongai bahnar",
+"viet": "Người bahnar"
+},
+{
+"bana": "Bongai bu anoh",
+"viet": "Kẻ nào đó"
+},
+{
+"bana": "Bơngai chếp kol đăng đang",
+"viet": "Bí thư"
+},
+{
+"bana": "Bongai chih tobăt",
+"viet": "Nhà báo"
+},
+{
+"bana": "Bơngai chovong hokě",
+"viet": "Người gầy"
+},
+{
+"bana": "bongai hokě",
+"viet": "Người gầy"
+},
+{
+"bana": "Bongai donuh",
+"viet": "Người nghèo"
+},
+{
+"bana": "Bongai glăi",
+"viet": "Phạm nhân"
+},
+{
+"bana": "Bơngai hơrih",
+"viet": "Dân cư"
+},
+{
+"bana": "Bongai huăr gre par",
+"viet": "Phi công"
+},
+{
+"bana": "Bơngai iâm",
+"viet": "Nhân hậu"
+},
+{
+"bana": "Bơngai jang hnam kơmăi",
+"viet": "Công nhân"
+},
+{
+"bana": "kông nhân",
+"viet": "Công nhân"
+},
+{
+"bana": "Bongai jang mir",
+"viet": "Nhà nông"
+},
+{
+"bana": "Bongai jang mir na",
+"viet": "Làm nông"
+},
+{
+"bana": "Bơngai jang mir na",
+"viet": "Nông dân"
+},
+{
+"bana": "Bongai jř",
+"viet": "Bệnh nhân"
+},
+{
+"bana": "Bongai joh hơri",
+"viet": "Nhạc sĩ"
+},
+{
+"bana": "Bongai joh suang",
+"viet": "Nghệ sĩ"
+},
+{
+"bana": "Bobôn",
+"viet": "Mịn màng"
+},
+{
+"bana": "Bobo",
+"viet": "Sờ mó"
+},
+{
+"bana": "hobo",
+"viet": "Sờ mó"
+},
+{
+"bana": "Bobt",
+"viet": "Xài"
+},
+{
+"bana": "Bơbot jên",
+"viet": "Xài tiền"
+},
+{
+"bana": "Bobot",
+"viet": "Tiêu xài"
+},
+{
+"bana": "pohuach",
+"viet": "Tiêu xài"
+},
+{
+"bana": "hohoch",
+"viet": "Tiêu xài"
+},
+{
+"bana": "Bobring",
+"viet": "San sát"
+},
+{
+"bana": "Bobrot",
+"viet": "Liên tục"
+},
+{
+"bana": "pogrong",
+"viet": "Liên tục"
+},
+{
+"bana": "Bơbrök",
+"viet": "Thầm thì"
+},
+{
+"bana": "mơ mơnh",
+"viet": "Thầm thì"
+},
+{
+"bana": "Bobrong",
+"viet": "Nằm thẳng"
+},
+{
+"bana": "Bobŭk teh",
+"viet": "Xúc đất"
+},
+{
+"bana": "Bobŭk đg",
+"viet": "Xúc"
+},
+{
+"bana": "Bobŭk trôk",
+"viet": "Xúc bùn"
+},
+{
+"bana": "Bobŭng",
+"viet": "Nóc, mái"
+},
+{
+"bana": "Bơbŭng",
+"viet": "Mái"
+},
+{
+"bana": "Bobung hnam",
+"viet": "Mái nhà"
+},
+{
+"bana": "Bobŭng hnam",
+"viet": "Nóc nhà"
+},
+{
+"bana": "Bobŭng pok",
+"viet": "Nóc kho"
+},
+{
+"bana": "Bơh bơm",
+"viet": "Lỡ"
+},
+{
+"bana": "hơch",
+"viet": "Lỡ"
+},
+{
+"bana": "Bohle",
+"viet": "Nghịch"
+},
+{
+"bana": "Bohleng",
+"viet": "Nghén"
+},
+{
+"bana": "Bohngir",
+"viet": "Mùi hôi"
+},
+{
+"bana": "Bohngol",
+"viet": "Hương hồn"
+},
+{
+"bana": "Bơih",
+"viet": "Rồi"
+},
+{
+"bana": "Bờl hăl đg",
+"viet": "Chán ngán"
+},
+{
+"bana": "Bơla rôih",
+"viet": "Ngà voi"
+},
+{
+"bana": "pơla rôih",
+"viet": "Ngà voi"
+},
+{
+"bana": "Bolah",
+"viet": "Tấm"
+},
+{
+"bana": "Bolah phe",
+"viet": "Tấm gạo"
+},
+{
+"bana": "polah",
+"viet": "Tấm gạo"
+},
+{
+"bana": "Bolang",
+"viet": "Trắng"
+},
+{
+"bana": "Bolăm",
+"viet": "Bàn tán"
+},
+{
+"bana": "Bơlo",
+"viet": "Sốt"
+},
+{
+"bana": "Bơlôh",
+"viet": "Cái lỗ"
+},
+{
+"bana": "Bơloh",
+"viet": "Thay phiên"
+},
+{
+"bana": "boyong",
+"viet": "Thay phiên"
+},
+{
+"bana": "Bơlčk",
+"viet": "Chì"
+},
+{
+"bana": "polâk",
+"viet": "Chì"
+},
+{
+"bana": "Boluăn anăr",
+"viet": "Nhật thực"
+},
+{
+"bana": "drah luăn năr",
+"viet": "Nhật thực"
+},
+{
+"bana": "Bơluăn khěi",
+"viet": "Nhật nguyệt"
+},
+{
+"bana": "Boluăn khěi",
+"viet": "Nguyệt thực"
+},
+{
+"bana": "drah luăn khěi",
+"viet": "Nguyệt thực"
+},
+{
+"bana": "Boluăn",
+"viet": "Nhật"
+},
+{
+"bana": "rah luăn",
+"viet": "Nhật"
+},
+{
+"bana": "Bơlŭk",
+"viet": "Quá nhiều"
+},
+{
+"bana": "pogră kng",
+"viet": "Quá nhiều"
+},
+{
+"bana": "Choh pogar",
+"viet": "Cuốc vườn"
+},
+{
+"bana": "Chok",
+"viet": "Khoét rãnh"
+},
+{
+"bana": "Chok dih băl",
+"viet": "Đấm nhau"
+},
+{
+"bana": "Chok đing",
+"viet": "Khoét ống"
+},
+{
+"bana": "Chok",
+"viet": "Đấm"
+},
+{
+"bana": "hotop",
+"viet": "Đấm"
+},
+{
+"bana": "tŭr",
+"viet": "Đấm"
+},
+{
+"bana": "hotâp",
+"viet": "Đấm"
+},
+{
+"bana": "Chol",
+"viet": "Chuôi"
+},
+{
+"bana": "Chol săng",
+"viet": "Chuôi dao"
+},
+{
+"bana": "Chong",
+"viet": "Phát"
+},
+{
+"bana": "Chong anhiět",
+"viet": "Phát cỏ"
+},
+{
+"bana": "Chong hơnong ba",
+"viet": "Phát rạ"
+},
+{
+"bana": "Chong mir",
+"viet": "Phát rẫy"
+},
+{
+"bana": "Chong muih",
+"viet": "Khai hoang"
+},
+{
+"bana": "Chong muih",
+"viet": "Phát hoang"
+},
+{
+"bana": "Chop bơngai tơtông",
+"viet": "Rình trộm"
+},
+{
+"bana": "Chop kơne",
+"viet": "Rình chuột"
+},
+{
+"bana": "Chop mờng",
+"viet": "Dò thám"
+},
+{
+"bana": "Chor",
+"viet": "Mạch"
+},
+{
+"bana": "Chor hobong",
+"viet": "Đào mương"
+},
+{
+"bana": "Chor pham",
+"viet": "Mạch máu"
+},
+{
+"bana": "Chou",
+"viet": "Bấu vứu"
+},
+{
+"bana": "Chỗ",
+"viet": "Buộc"
+},
+{
+"bana": "Chỗ",
+"viet": "Cột"
+},
+{
+"bana": "Chỗ",
+"viet": "Trói"
+},
+{
+"bana": "Chỗ jơlak",
+"viet": "Cột lạt"
+},
+{
+"bana": "Chỗ những",
+"viet": "Trói heo"
+},
+{
+"bana": "Chỗ sok đg",
+"viet": "Búi tóc"
+},
+{
+"bana": "Chỗ tơlěi đg",
+"viet": "Buộc dây"
+},
+{
+"bana": "Chông ba đg",
+"viet": "Dắt theo"
+},
+{
+"bana": "Chông oh đg",
+"viet": "Dắt em"
+},
+{
+"bana": "Chông",
+"viet": "Dắt"
+},
+{
+"bana": "bơrơng",
+"viet": "Dắt"
+},
+{
+"bana": "kiěu",
+"viet": "Dắt"
+},
+{
+"bana": "Chôt brõk",
+"viet": "Quay lại"
+},
+{
+"bana": "Chôt brok",
+"viet": "Trở lại"
+},
+{
+"bana": "Chơ đg",
+"viet": "Chở"
+},
+{
+"bana": "Chơ d",
+"viet": "Chợ"
+},
+{
+"bana": "Chơ bơngai",
+"viet": "Chở người"
+},
+{
+"bana": "Chih tobăt",
+"viet": "Hoá đơn"
+},
+{
+"bana": "Chih todrong",
+"viet": "Luận đề"
+},
+{
+"bana": "Chih tolang",
+"viet": "Bản thảo"
+},
+{
+"bana": "Chih toroi",
+"viet": "Viết phóng sự"
+},
+{
+"bana": "Chih blök",
+"viet": "Ghi nhớ"
+},
+{
+"bana": "Chik",
+"viet": "Dứa"
+},
+{
+"bana": "Chik",
+"viet": "Thơm"
+},
+{
+"bana": "Chik đum",
+"viet": "Dứa chín"
+},
+{
+"bana": "Chik koxě",
+"viet": "Dứa xanh"
+},
+{
+"bana": "Chinh",
+"viet": "Chiêng bằng"
+},
+{
+"bana": "Chit kol todrong",
+"viet": "Bịt đầu mối"
+},
+{
+"bana": "Cht măt",
+"viet": "Bịt mắt"
+},
+{
+"bana": "Chit mu mã",
+"viet": "Bịt mặt mũi"
+},
+{
+"bana": "Chit ti",
+"viet": "Bịt tay"
+},
+{
+"bana": "Cht trôm",
+"viet": "Bịt lỗ"
+},
+{
+"bana": "Chit bờr",
+"viet": "Bịt miệng"
+},
+{
+"bana": "Ching",
+"viet": "Cồng"
+},
+{
+"bana": "Ching chêng",
+"viet": "Cồng chiêng"
+},
+{
+"bana": "Ching klơk",
+"viet": "Đàn tơ rưng"
+},
+{
+"bana": "Chĩt",
+"viet": "Bịt"
+},
+{
+"bana": "Chit",
+"viet": "Trét kín"
+},
+{
+"bana": "Chiu đg",
+"viet": "Chịu"
+},
+{
+"bana": "Chĩu kiờ",
+"viet": "Giác ngộ"
+},
+{
+"bana": "Chĩu lôch",
+"viet": "Cảm tử -"
+},
+{
+"bana": "Chiu lui",
+"viet": "Tôn trọng"
+},
+{
+"bana": "giă",
+"viet": "Tôn trọng"
+},
+{
+"bana": "yom",
+"viet": "Tôn trọng"
+},
+{
+"bana": "Chiu pomat",
+"viet": "Chịu khổ"
+},
+{
+"bana": "Chĩu pù",
+"viet": "Chịu mang"
+},
+{
+"bana": "Chĩu pŭ",
+"viet": "Trách nhiệm"
+},
+{
+"bana": "Chřu tơgm",
+"viet": "Chịu giúp"
+},
+{
+"bana": "Chĩu yoch",
+"viet": "Chịu tội"
+},
+{
+"bana": "Choh",
+"viet": "Cuốc"
+},
+{
+"bana": "Choh anhiět",
+"viet": "Làm cỏ"
+},
+{
+"bana": "Choh anhiět",
+"viet": "Dãy"
+},
+{
+"bana": "Choh chăn",
+"viet": "Cuốc ruộng"
+},
+{
+"bana": "Choh mir",
+"viet": "Cuốc nương"
+},
+{
+"bana": "Choh mir",
+"viet": "Cuốc"
+},
+{
+"bana": "Chêng klờng",
+"viet": "Chiêng cải tiến"
+},
+{
+"bana": "Chêng so",
+"viet": "Chiêng cổ"
+},
+{
+"bana": "Chhek chhök",
+"viet": "Mâu thuẫn"
+},
+{
+"bana": "Chhing",
+"viet": "Sừng sững"
+},
+{
+"bana": "Chho gờ",
+"viet": "Rửa xoong"
+},
+{
+"bana": "Chhờng",
+"viet": "Vớt"
+},
+{
+"bana": "Chhờng ičk ka",
+"viet": "Vớt cá"
+},
+{
+"bana": "Chhờnh",
+"viet": "Thù hằn"
+},
+{
+"bana": "Chhonh the",
+"viet": "Thù đánh"
+},
+{
+"bana": "Chhôk",
+"viet": "Khoan khoái"
+},
+{
+"bana": "Chho",
+"viet": "Vẽ - đg"
+},
+{
+"bana": "chih",
+"viet": "Vẽ - đg"
+},
+{
+"bana": "Chhơp rơngơp",
+"viet": "Mát lòng"
+},
+{
+"bana": "Chhơp",
+"viet": "Mát"
+},
+{
+"bana": "rơngơp",
+"viet": "Mát"
+},
+{
+"bana": "Chhờ bơngai",
+"viet": "Vẽ người"
+},
+{
+"bana": "Chho rup",
+"viet": "Vẽ hình"
+},
+{
+"bana": "Chhur",
+"viet": "Đau lòng"
+},
+{
+"bana": "hang nuih",
+"viet": "Đau lòng"
+},
+{
+"bana": "pơji",
+"viet": "Đau lòng"
+},
+{
+"bana": "Chhut hnam",
+"viet": "Lau nhà"
+},
+{
+"bana": "sut hnam",
+"viet": "Lau nhà"
+},
+{
+"bana": "Chhut kơ bang",
+"viet": "Lau bàn"
+},
+{
+"bana": "Chhut kơ bang găm",
+"viet": "Lau bảng"
+},
+{
+"bana": "Chhut tang do",
+"viet": "Lau ghế"
+},
+{
+"bana": "Chhut",
+"viet": "Lau -"
+},
+{
+"bana": "sut",
+"viet": "Lau -"
+},
+{
+"bana": "Chi tơbăt ăn",
+"viet": "Đăng ký"
+},
+{
+"bana": "Chih",
+"viet": "Biên"
+},
+{
+"bana": "Chih",
+"viet": "Ghi"
+},
+{
+"bana": "Chih",
+"viet": "Viết -"
+},
+{
+"bana": "Chih adrol",
+"viet": "Viết nháp"
+},
+{
+"bana": "Chih chư",
+"viet": "Viết chữ"
+},
+{
+"bana": "Chih dờng",
+"viet": "Tái bút"
+},
+{
+"bana": "Chih hla boar",
+"viet": "Viết sách"
+},
+{
+"bana": "Chih ičk",
+"viet": "Ghi nhận"
+},
+{
+"bana": "Chih jök",
+"viet": "Biên nhận"
+},
+{
+"bana": "Chih kơchěng",
+"viet": "Tiểu luận"
+},
+{
+"bana": "Chih măt",
+"viet": "Viết tên"
+},
+{
+"bana": "Chih pocheh",
+"viet": "Tác giả"
+},
+{
+"bana": "Chih pođok",
+"viet": "Văn học"
+},
+{
+"bana": "Chih pơsữ",
+"viet": "Bút tích"
+},
+{
+"bana": "Chih tơ bôh",
+"viet": "Luận án"
+},
+{
+"bana": "Che",
+"viet": "Vải"
+},
+{
+"bana": "Che",
+"viet": "Giẻ"
+},
+{
+"bana": "Che găm",
+"viet": "Vải đen"
+},
+{
+"bana": "Che kok",
+"viet": "Vải trắng"
+},
+{
+"bana": "Che nhêu",
+"viet": "Khăn nhiễu"
+},
+{
+"bana": "Che pokao",
+"viet": "Vải hoa"
+},
+{
+"bana": "Che sut cobang găm",
+"viet": "Giẻ lau bảng"
+},
+{
+"bana": "Che sut kobang",
+"viet": "Giẻ lau bàn"
+},
+{
+"bana": "Cheh",
+"viet": "Nở"
+},
+{
+"bana": "Chek",
+"viet": "Đẻ nhiều"
+},
+{
+"bana": "Chek lar",
+"viet": "Sinh sản"
+},
+{
+"bana": "Chem chom",
+"viet": "Hiểm hóc"
+},
+{
+"bana": "Cheng akou",
+"viet": "Nghiêng mình"
+},
+{
+"bana": "Cheng chong",
+"viet": "Xếu mếu"
+},
+{
+"bana": "Cheng găn",
+"viet": "Buồng"
+},
+{
+"bana": "Cheng găn",
+"viet": "Ngăn cách"
+},
+{
+"bana": "Cheng găn tep",
+"viet": "Buồng ngủ"
+},
+{
+"bana": "Cheng hluăn",
+"viet": "Mai"
+},
+{
+"bana": "Cheng hơkung",
+"viet": "Mép"
+},
+{
+"bana": "Cheng",
+"viet": "Nghiêng"
+},
+{
+"bana": "horêng",
+"viet": "Nghiêng"
+},
+{
+"bana": "goling",
+"viet": "Nghiêng"
+},
+{
+"bana": "Chep chep",
+"viet": "Chíp chíp"
+},
+{
+"bana": "Chếp ba",
+"viet": "Giữ lấy; mang cùng"
+},
+{
+"bana": "Chếp ba",
+"viet": "Phát"
+},
+{
+"bana": "Chěp kâl",
+"viet": "Người đứng đầu cơ quan"
+},
+{
+"bana": "Chěp kong kơ nol",
+"viet": "Giao ước"
+},
+{
+"bana": "Chěp kong kơ nol",
+"viet": "Ký kết"
+},
+{
+"bana": "Chěng ičk bri",
+"viet": "Lấy rừng"
+},
+{
+"bana": "Chěng ičk",
+"viet": "Chiếm lấy"
+},
+{
+"bana": "plah ičk",
+"viet": "Chiếm lấy"
+},
+{
+"bana": "Chěng song",
+"viet": "Quy hoạch"
+},
+{
+"bana": "Chěng sơlam",
+"viet": "Chia ranh giới"
+},
+{
+"bana": "Chèng",
+"viet": "Ngăn"
+},
+{
+"bana": "sih",
+"viet": "Ngăn"
+},
+{
+"bana": "Chếp",
+"viet": "Cầm"
+},
+{
+"bana": "Chếp",
+"viet": "Đem"
+},
+{
+"bana": "Chěp ba",
+"viet": "Mang theo"
+},
+{
+"bana": "hơrăng",
+"viet": "Mang theo"
+},
+{
+"bana": "Chê pơnê",
+"viet": "Chế nhạo"
+},
+{
+"bana": "Chêng",
+"viet": "Chiêng"
+},
+{
+"bana": "Chêng",
+"viet": "Chiêng núm"
+},
+{
+"bana": "Chă pơiăp",
+"viet": "Đáp án"
+},
+{
+"bana": "Chă pnhen",
+"viet": "Tra khảo"
+},
+{
+"bana": "Chă pơtơm",
+"viet": "Huy động"
+},
+{
+"bana": "Chă pơvao",
+"viet": "Suy diễn"
+},
+{
+"bana": "Chă sa",
+"viet": "Kiếm ăn"
+},
+{
+"bana": "Chă toblah",
+"viet": "Hiếu chiến"
+},
+{
+"bana": "Chă todrong",
+"viet": "Gây chuyện"
+},
+{
+"bana": "pojěi băl",
+"viet": "Gây chuyện"
+},
+{
+"bana": "Chă todrong hdoih",
+"viet": "Kết hợp"
+},
+{
+"bana": "Chă todrong rogěi",
+"viet": "Kế hoạch"
+},
+{
+"bana": "Chă tơhil",
+"viet": "Gây sự"
+},
+{
+"bana": "Chă tơmờng",
+"viet": "Suy tâm"
+},
+{
+"bana": "Chă toroi",
+"viet": "Tiểu thuyết"
+},
+{
+"bana": "Chă trong",
+"viet": "Dò thăm"
+},
+{
+"bana": "Chă trong",
+"viet": "Tìm đường"
+},
+{
+"bana": "Chă wăpơm",
+"viet": "Đề tài"
+},
+{
+"bana": "chih todrong",
+"viet": "Đề tài"
+},
+{
+"bana": "Chă yâu ka",
+"viet": "Xúc cá"
+},
+{
+"bana": "yòu ka",
+"viet": "Xúc cá"
+},
+{
+"bana": "Chăl",
+"viet": "Thời kỳ"
+},
+{
+"bana": "Chăl ahrěi",
+"viet": "Hiện đại"
+},
+{
+"bana": "Chăl ahrěi",
+"viet": "Thời đại"
+},
+{
+"bana": "Chăl dang i",
+"viet": "Thời nay"
+},
+{
+"bana": "Chăl hle",
+"viet": "Thời đại mới"
+},
+{
+"bana": "Chăl mình",
+"viet": "Phần một"
+},
+{
+"bana": "Chăl ning mônh",
+"viet": "Thời sau"
+},
+{
+"bana": "Chăl so",
+"viet": "Thời trước"
+},
+{
+"bana": "Chăl bar",
+"viet": "Phần hai"
+},
+{
+"bana": "Chăl",
+"viet": "Đời"
+},
+{
+"bana": "jơ hnơr",
+"viet": "Đời"
+},
+{
+"bana": "Chăr along ŭnh",
+"viet": "Chẻ củi"
+},
+{
+"bana": "Chăr hre",
+"viet": "Chẻ mây"
+},
+{
+"bana": "Chăr jolak",
+"viet": "Chẻ lạt"
+},
+{
+"bana": "Chăr pơm pêng",
+"viet": "Chẻ làm ba"
+},
+{
+"bana": "Chăr pơm bar",
+"viet": "Chẻ làm đôi"
+},
+{
+"bana": "Chăr",
+"viet": "Chẻ"
+},
+{
+"bana": "blah",
+"viet": "Chẻ"
+},
+{
+"bana": "Chăt alăng",
+"viet": "Mọc tốt"
+},
+{
+"bana": "Chăt",
+"viet": "Nhú"
+},
+{
+"bana": "bluh đg",
+"viet": "Nhú"
+},
+{
+"bana": "Chăt",
+"viet": "Mọc"
+},
+{
+"bana": "hon",
+"viet": "Mọc"
+},
+{
+"bana": "đah đg",
+"viet": "Mọc"
+},
+{
+"bana": "Châng",
+"viet": "Cắt"
+},
+{
+"bana": "kăt",
+"viet": "Cắt"
+},
+{
+"bana": "puăt",
+"viet": "Cắt"
+},
+{
+"bana": "ret",
+"viet": "Cắt"
+},
+{
+"bana": "yuă",
+"viet": "Cắt"
+},
+{
+"bana": "Châng",
+"viet": "Chặt"
+},
+{
+"bana": "Che",
+"viet": "Trà"
+},
+{
+"bana": "Char",
+"viet": "Mèo rừng"
+},
+{
+"bana": "Char",
+"viet": "Tỉnh"
+},
+{
+"bana": "Char chươh",
+"viet": "Sa mạc"
+},
+{
+"bana": "Char kông",
+"viet": "Cao nguyên"
+},
+{
+"bana": "Char kông",
+"viet": "Vùng núi"
+},
+{
+"bana": "Char teh",
+"viet": "Địa hình"
+},
+{
+"bana": "Char tih",
+"viet": "Thành phố"
+},
+{
+"bana": "Chă",
+"viet": "Kiếm"
+},
+{
+"bana": "Chă",
+"viet": "Tìm"
+},
+{
+"bana": "Chă akom",
+"viet": "Quy tụ"
+},
+{
+"bana": "Chă along ŭnh",
+"viet": "Kiếm củi"
+},
+{
+"bana": "Chă ăn",
+"viet": "Tìm cho"
+},
+{
+"bana": "Chă băt",
+"viet": "Phát giác"
+},
+{
+"bana": "Chă bôh",
+"viet": "Phát hiện"
+},
+{
+"bana": "Chă dăr",
+"viet": "Tuần tra"
+},
+{
+"bana": "dăr lăng",
+"viet": "Tuần tra"
+},
+{
+"bana": "Chă đon",
+"viet": "Mưu kế"
+},
+{
+"bana": "Chă hơdang",
+"viet": "Mò tôm"
+},
+{
+"bana": "Chă hơlěnh",
+"viet": "Mưu mẹo"
+},
+{
+"bana": "Chă hơmo",
+"viet": "Tiên đoán"
+},
+{
+"bana": "Chă hơvờ ka",
+"viet": "Mò cá"
+},
+{
+"bana": "Chă hơvờ",
+"viet": "Mò mẫm"
+},
+{
+"bana": "jơjờ",
+"viet": "Mò mẫm"
+},
+{
+"bana": "Chă huang",
+"viet": "Đi dạo"
+},
+{
+"bana": "Chă juang",
+"viet": "Trinh sát -"
+},
+{
+"bana": "Chă juang tơmang",
+"viet": "Du lịch"
+},
+{
+"bana": "chă ngôi",
+"viet": "Du lịch"
+},
+{
+"bana": "Chă kơchěng",
+"viet": "Tâm trí"
+},
+{
+"bana": "Chă kơchěng kodih",
+"viet": "Suy nghĩ"
+},
+{
+"bana": "kochěng",
+"viet": "Suy nghĩ"
+},
+{
+"bana": "tochěng",
+"viet": "Suy nghĩ"
+},
+{
+"bana": "totinh",
+"viet": "Suy nghĩ"
+},
+{
+"bana": "Chă kơdih",
+"viet": "Tự tìm"
+},
+{
+"bana": "Chă kodih",
+"viet": "Tự lực"
+},
+{
+"bana": "jang kơdih",
+"viet": "Tự lực"
+},
+{
+"bana": "Chă lăng đg",
+"viet": "Thanh tra"
+},
+{
+"bana": "Chă lua",
+"viet": "Đi săn"
+},
+{
+"bana": "hơnguang",
+"viet": "Đi săn"
+},
+{
+"bana": "chă druh",
+"viet": "Đi săn"
+},
+{
+"bana": "Chă mờng",
+"viet": "Tình báo"
+},
+{
+"bana": "Chă năng",
+"viet": "Khảo sát"
+},
+{
+"bana": "Chă năng",
+"viet": "Kiểm soát"
+},
+{
+"bana": "Chă năng",
+"viet": "Quan sát"
+},
+{
+"bana": "lăng hơlen",
+"viet": "Quan sát"
+},
+{
+"bana": "Chă oh",
+"viet": "Tìm em"
+},
+{
+"bana": "Chă pơang",
+"viet": "Phô trương"
+},
+{
+"bana": "Chă podăr",
+"viet": "Mưu trí"
+},
+{
+"bana": "Chă pơhrat",
+"viet": "Phiền lòng"
+},
+{
+"bana": "Chai",
+"viet": "Cái chai"
+},
+{
+"bana": "Chai",
+"viet": "Cánh kiến"
+},
+{
+"bana": "Chai alăk",
+"viet": "Chai rượ"
+},
+{
+"bana": "Chai đak",
+"viet": "Chai nước"
+},
+{
+"bana": "Chai đak măm",
+"viet": "Chai nước mắm"
+},
+{
+"bana": "Chai",
+"viet": "Ném"
+},
+{
+"bana": "Chaih hut",
+"viet": "Ném đi"
+},
+{
+"bana": "Chaih tơmo",
+"viet": "Ném"
+},
+{
+"bana": "Chak",
+"viet": "Loang đuôi"
+},
+{
+"bana": "Cham",
+"viet": "Sân"
+},
+{
+"bana": "Cham anhot",
+"viet": "Bãi rau"
+},
+{
+"bana": "Cham đã bằng lờng",
+"viet": "Sân bóng đá"
+},
+{
+"bana": "Cham gre par",
+"viet": "Phi trường"
+},
+{
+"bana": "donök",
+"viet": "Phi trường"
+},
+{
+"bana": "Cham gre păr",
+"viet": "Sân bay"
+},
+{
+"bana": "dợnăk",
+"viet": "Sân bay"
+},
+{
+"bana": "Cham hnam",
+"viet": "Sân nhà"
+},
+{
+"bana": "cham",
+"viet": "Sân nhà"
+},
+{
+"bana": "Cham kotao",
+"viet": "Bãi mía"
+},
+{
+"bana": "Cham ngôi",
+"viet": "Sân chơi"
+},
+{
+"bana": "Cham ngôi sök iěr",
+"viet": "Sân cầu lông"
+},
+{
+"bana": "Cham pah băng lờng",
+"viet": "Sân bóng chuyền"
+},
+{
+"bana": "Cham să",
+"viet": "Quảng trường"
+},
+{
+"bana": "Cham să",
+"viet": "Sân vận động"
+},
+{
+"bana": "Cham sỡk",
+"viet": "Sân phơi"
+},
+{
+"bana": "Cham",
+"viet": "Bãi"
+},
+{
+"bana": "tơ nok",
+"viet": "Bãi"
+},
+{
+"bana": "Chang",
+"viet": "Mong"
+},
+{
+"bana": "Chang",
+"viet": "Trông chờ"
+},
+{
+"bana": "Chang",
+"viet": "Trông mong"
+},
+{
+"bana": "Chang hmăng",
+"viet": "Ngóng; sẵn sàng"
+},
+{
+"bana": "Cháng bă wih",
+"viet": "Mong bố về"
+},
+{
+"bana": "Chao anhěm",
+"viet": "Cháo thịt"
+},
+{
+"bana": "Chao ka",
+"viet": "Cháo cá"
+},
+{
+"bana": "Chao klak",
+"viet": "Cháo lòng"
+},
+{
+"bana": "Chao kodăp",
+"viet": "Cháo trứng"
+},
+{
+"bana": "Chao kodim",
+"viet": "Cháo hành"
+},
+{
+"bana": "Chao ronŭng",
+"viet": "Cháo lươn"
+},
+{
+"bana": "Chao anhěm romo",
+"viet": "Cháo thịt bò"
+},
+{
+"bana": "Char",
+"viet": "Cáo"
+},
+{
+"bana": "Brâm đôh",
+"viet": "Đạn nổ"
+},
+{
+"bana": "Bre",
+"viet": "Họ"
+},
+{
+"bana": "Brě",
+"viet": "Biền biệt"
+},
+{
+"bana": "Brẽ pă bôh",
+"viet": "Biệt tăm"
+},
+{
+"bana": "Bri",
+"viet": "Rừng"
+},
+{
+"bana": "Bri kông",
+"viet": "Rừng núi"
+},
+{
+"bana": "Bri kodrong",
+"viet": "Tài nguyên"
+},
+{
+"bana": "Bri rơng",
+"viet": "Rừng rậm"
+},
+{
+"bana": "Bring brih",
+"viet": "Nhá nhem"
+},
+{
+"bana": "Bring brông",
+"viet": "Kẻ ca rô"
+},
+{
+"bana": "Bring brông",
+"viet": "Loang lố"
+},
+{
+"bana": "mak klěng",
+"viet": "Loang lố"
+},
+{
+"bana": "mêk",
+"viet": "Loang lố"
+},
+{
+"bana": "Bro pit",
+"viet": "Dương cầm"
+},
+{
+"bana": "Prot ba",
+"viet": "Tuốt lúa"
+},
+{
+"bana": "kěch ba",
+"viet": "Tuốt lúa"
+},
+{
+"bana": "Prt",
+"viet": "Tuốt"
+},
+{
+"bana": "kěch",
+"viet": "Tuốt"
+},
+{
+"bana": "Bro",
+"viet": "Đài"
+},
+{
+"bana": "Brok đăng hok",
+"viet": "Đi học về"
+},
+{
+"bana": "Brok tơ hnam",
+"viet": "Về nhà"
+},
+{
+"bana": "Broih",
+"viet": "Ấu"
+},
+{
+"bana": "Brơt",
+"viet": "Khiếp vía"
+},
+{
+"bana": "Bruh brah",
+"viet": "Cẩu thả"
+},
+{
+"bana": "brit t",
+"viet": "Cẩu thả"
+},
+{
+"bana": "Bruh ičk",
+"viet": "Chụp lấy"
+},
+{
+"bana": "chuěch ičk",
+"viet": "Chụp lấy"
+},
+{
+"bana": "hovơi",
+"viet": "Chụp lấy"
+},
+{
+"bana": "Bruh",
+"viet": "Chụp"
+},
+{
+"bana": "chuěch",
+"viet": "Chụp"
+},
+{
+"bana": "Brui",
+"viet": "Cái cọ"
+},
+{
+"bana": "Brul",
+"viet": "Con dúi"
+},
+{
+"bana": "sôk",
+"viet": "Con dúi"
+},
+{
+"bana": "Brunh",
+"viet": "Tủm tỉm"
+},
+{
+"bana": "Brŭ",
+"viet": "Lễ bỏ mả"
+},
+{
+"bana": "mât poxat",
+"viet": "Lễ bỏ mả"
+},
+{
+"bana": "Brung",
+"viet": "Gỉ"
+},
+{
+"bana": "goxang",
+"viet": "Gỉ"
+},
+{
+"bana": "Brừ",
+"viet": "Điều ác"
+},
+{
+"bana": "Brừ",
+"viet": "Điều xấu"
+},
+{
+"bana": "Buăl juăt",
+"viet": "Bạn thân"
+},
+{
+"bana": "Buch",
+"viet": "Hạt tiêu"
+},
+{
+"bana": "Buh",
+"viet": "Ai"
+},
+{
+"bana": "Buh anoh",
+"viet": "Ai đó"
+},
+{
+"bana": "Buk",
+"viet": "Mền"
+},
+{
+"bana": "Bung bang",
+"viet": "Hoa sim"
+},
+{
+"bana": "Bŭk",
+"viet": "Mục"
+},
+{
+"bana": "Bưh bưh",
+"viet": "Mãi mãi"
+},
+{
+"bana": "Bưh",
+"viet": "Cũng được"
+},
+{
+"bana": "kừm bưh",
+"viet": "Cũng được"
+},
+{
+"bana": "gơh mân",
+"viet": "Cũng được"
+},
+{
+"bana": "Botho hori",
+"viet": "Dạy hát"
+},
+{
+"bana": "Botho rogěi",
+"viet": "Dạy giỏi"
+},
+{
+"bana": "Bovang",
+"viet": "Bao vây"
+},
+{
+"bana": "wang dăr",
+"viet": "Bao vây"
+},
+{
+"bana": "povang",
+"viet": "Bao vây"
+},
+{
+"bana": "Bơvěnh",
+"viet": "Cái xoáy"
+},
+{
+"bana": "Bơvinh",
+"viet": "Quanh quẩn"
+},
+{
+"bana": "Poxat",
+"viet": "Mả"
+},
+{
+"bana": "Boyong",
+"viet": "Xen kẽ"
+},
+{
+"bana": "plang",
+"viet": "Xen kẽ"
+},
+{
+"bana": "tăh plang đg",
+"viet": "Xen kẽ"
+},
+{
+"bana": "Bơyong",
+"viet": "Đi qua lại"
+},
+{
+"bana": "Bơxuh",
+"viet": "Múa kiếm"
+},
+{
+"bana": "Bơxuh",
+"viet": "Nô đùa"
+},
+{
+"bana": "Boxŭn",
+"viet": "Túp lều"
+},
+{
+"bana": "poxŭn",
+"viet": "Túp lều"
+},
+{
+"bana": "Bo bơnờ",
+"viet": "Đắp bờ"
+},
+{
+"bana": "B bơnă",
+"viet": "Đắp đập"
+},
+{
+"bana": "Bờ jang alâng",
+"viet": "Làm tốt"
+},
+{
+"bana": "Bo jang",
+"viet": "Làm việc"
+},
+{
+"bana": "jang",
+"viet": "Làm việc"
+},
+{
+"bana": "Bờl",
+"viet": "Chán"
+},
+{
+"bana": "Bol sa",
+"viet": "Chán ăn"
+},
+{
+"bana": "Bỡng",
+"viet": "Đậy"
+},
+{
+"bana": "đờp",
+"viet": "Đậy"
+},
+{
+"bana": "klờp",
+"viet": "Đậy"
+},
+{
+"bana": "Brah brêng",
+"viet": "Cà chua"
+},
+{
+"bana": "pro kreng",
+"viet": "Cà chua"
+},
+{
+"bana": "Brai",
+"viet": "Chỉ"
+},
+{
+"bana": "Brai",
+"viet": "Sợi chỉ"
+},
+{
+"bana": "Brai bolang",
+"viet": "Chỉ trắng"
+},
+{
+"bana": "Brai dreng",
+"viet": "Chỉ vàng"
+},
+{
+"bana": "Brai gôh",
+"viet": "Chỉ đỏ"
+},
+{
+"bana": "Brai hobŭng",
+"viet": "Chỉ đen"
+},
+{
+"bana": "Brai jok",
+"viet": "Chỉ xanh"
+},
+{
+"bana": "Bral",
+"viet": "Chừa"
+},
+{
+"bana": "Bral",
+"viet": "Chừa bỏ"
+},
+{
+"bana": "Bral",
+"viet": "Cách"
+},
+{
+"bana": "uh tolir",
+"viet": "Cách"
+},
+{
+"bana": "Bral brot",
+"viet": "Kinh hoàng"
+},
+{
+"bana": "Bral tongal",
+"viet": "Hoảng hốt"
+},
+{
+"bana": "Bral tơrơ",
+"viet": "Hoảng sợ"
+},
+{
+"bana": "Bram",
+"viet": "Mặt nạ"
+},
+{
+"bana": "Bram",
+"viet": "Râu dê đực"
+},
+{
+"bana": "Brang",
+"viet": "Cây gió bầu"
+},
+{
+"bana": "Brang brah",
+"viet": "Lấm tấm"
+},
+{
+"bana": "Brăm",
+"viet": "Tạm được"
+},
+{
+"bana": "Brâk đg",
+"viet": "Mủi lòng"
+},
+{
+"bana": "Blông ŭnh đg",
+"viet": "Bùng cháy"
+},
+{
+"bana": "Blơch",
+"viet": "Ngậy"
+},
+{
+"bana": "Blờ",
+"viet": "Lật"
+},
+{
+"bana": "plð",
+"viet": "Lật"
+},
+{
+"bana": "tak",
+"viet": "Lật"
+},
+{
+"bana": "Blu",
+"viet": "Đùi"
+},
+{
+"bana": "Blu bâu",
+"viet": "Bẹn hăm"
+},
+{
+"bana": "Bluh",
+"viet": "Đâm chồi"
+},
+{
+"bana": "Bluh",
+"viet": "Mọc mầm"
+},
+{
+"bana": "Blŭk blŭk",
+"viet": "Sùng sục"
+},
+{
+"bana": "Blŭng",
+"viet": "Tiến vào"
+},
+{
+"bana": "Blŭng",
+"viet": "Xông vào"
+},
+{
+"bana": "Blư",
+"viet": "Bỗng nhiên"
+},
+{
+"bana": "Blu bla",
+"viet": "Ồ ạt"
+},
+{
+"bana": "Blưnhip",
+"viet": "Lấp bóng"
+},
+{
+"bana": "Bo",
+"viet": "Lép"
+},
+{
+"bana": "hobo",
+"viet": "Lép"
+},
+{
+"bana": "Bök trôm",
+"viet": "Khoét lỗ"
+},
+{
+"bana": "Bon kông",
+"viet": "Dãy núi"
+},
+{
+"bana": "Bon ring",
+"viet": "Dãy"
+},
+{
+"bana": "Bong",
+"viet": "Bướu"
+},
+{
+"bana": "Bong ko",
+"viet": "Bướu cổ"
+},
+{
+"bana": "Bong",
+"viet": "Quan tài"
+},
+{
+"bana": "hobong",
+"viet": "Quan tài"
+},
+{
+"bana": "Bop",
+"viet": "Hóp"
+},
+{
+"bana": "Bor",
+"viet": "Mang thai"
+},
+{
+"bana": "kiěu",
+"viet": "Mang thai"
+},
+{
+"bana": "Bor",
+"viet": "Chửa"
+},
+{
+"bana": "ưh kơhoh",
+"viet": "Chửa"
+},
+{
+"bana": "bŭng",
+"viet": "Chửa"
+},
+{
+"bana": "kiěu",
+"viet": "Chửa"
+},
+{
+"bana": "Bot",
+"viet": "Gọn"
+},
+{
+"bana": "Bot alâng",
+"viet": "Ngăn nắp"
+},
+{
+"bana": "Bot iao",
+"viet": "Gọn gàng"
+},
+{
+"bana": "Bòu ôm",
+"viet": "Ôi"
+},
+{
+"bana": "Bč",
+"viet": "Quai bị"
+},
+{
+"bana": "Bok",
+"viet": "Đục"
+},
+{
+"bana": "Bök",
+"viet": "Khoét"
+},
+{
+"bana": "Bok ak",
+"viet": "Nách"
+},
+{
+"bana": "Bök târ",
+"viet": "Đục gỗ"
+},
+{
+"bana": "Bong",
+"viet": "Giống đực"
+},
+{
+"bana": "Bouroi",
+"viet": "Phao tin"
+},
+{
+"bana": "Bôbông",
+"viet": "Rộng tuếch"
+},
+{
+"bana": "Bôi hla",
+"viet": "Đống lá"
+},
+{
+"bana": "Bỗi",
+"viet": "Cái hũ"
+},
+{
+"bana": "Bối",
+"viet": "Hũ"
+},
+{
+"bana": "Bongai jrai",
+"viet": "Người jrai"
+},
+{
+"bana": "Bongai khěch",
+"viet": "Người tàu"
+},
+{
+"bana": "Bongai kơih",
+"viet": "Phóng viên"
+},
+{
+"bana": "Bongai kojung",
+"viet": "Người cao"
+},
+{
+"bana": "Bongai komăl",
+"viet": "Người đậm"
+},
+{
+"bana": "Bongai komlo",
+"viet": "Người câm"
+},
+{
+"bana": "Bongai kon",
+"viet": "Kẻ gian -"
+},
+{
+"bana": "Bongai kopal teh",
+"viet": "Nhân gian"
+},
+{
+"bana": "Bongai kotul",
+"viet": "Người dốt"
+},
+{
+"bana": "Bongai lăng",
+"viet": "Khán giả"
+},
+{
+"bana": "Bongai nuih",
+"viet": "Dũng sỹ"
+},
+{
+"bana": "Bơngai pơm iông",
+"viet": "Đại ca"
+},
+{
+"bana": "Bongai poma",
+"viet": "Người nói"
+},
+{
+"bana": "Bongai pơma pơm jang holěnh",
+"viet": "Người cáo già"
+},
+{
+"bana": "Bongai pran",
+"viet": "Lực sỹ"
+},
+{
+"bana": "Bongai rogěi",
+"viet": "Nhân tài"
+},
+{
+"bana": "Bongai tök gre",
+"viet": "Hành khách"
+},
+{
+"bana": "Bongai wă",
+"viet": "Đối tượng"
+},
+{
+"bana": "Bongai wěi",
+"viet": "Người bảo vệ"
+},
+{
+"bana": "Bongai wěi",
+"viet": "Người quản lý"
+},
+{
+"bana": "Bơngai wơnh",
+"viet": "Người điên"
+},
+{
+"bana": "Bongai blo bloh",
+"viet": "Người tham lam"
+},
+{
+"bana": "bongai ham",
+"viet": "Người tham lam"
+},
+{
+"bana": "Ponhuăl",
+"viet": "Tê tê"
+},
+{
+"bana": "Bono",
+"viet": "Cái đập"
+},
+{
+"bana": "Bono",
+"viet": "Con đê"
+},
+{
+"bana": "Bonă",
+"viet": "Kè"
+},
+{
+"bana": "Bonŭng",
+"viet": "Bánh tẻ"
+},
+{
+"bana": "Bơnŭng",
+"viet": "Non bánh tẻ"
+},
+{
+"bana": "Bơo",
+"viet": "Trương"
+},
+{
+"bana": "Bơo",
+"viet": "Trướng"
+},
+{
+"bana": "Bơrơng",
+"viet": "Dìu dắt"
+},
+{
+"bana": "Bơrăng",
+"viet": "Cố ý"
+},
+{
+"bana": "pơhnăng",
+"viet": "Cố ý"
+},
+{
+"bana": "pơrăng",
+"viet": "Cố ý"
+},
+{
+"bana": "Botho",
+"viet": "Dạy"
+},
+{
+"bana": "Botho",
+"viet": "Khuyên"
+},
+{
+"bana": "khan",
+"viet": "Khuyên"
+},
+{
+"bana": "Botho akhan",
+"viet": "Dạy bảo"
+},
+{
+"bana": "Botho alăng",
+"viet": "Dạy tốt"
+},
+{
+"bana": "Botho ba",
+"viet": "Khuyên răn"
+},
+{
+"bana": "Botho hök",
+"viet": "Dạy học"
+},
+{
+"bana": "Bối",
+"viet": "Vại"
+},
+{
+"bana": "Bỗi alăk",
+"viet": "Hũ rượu"
+},
+{
+"bana": "Bỗi măm",
+"viet": "Hũ mắm"
+},
+{
+"bana": "Bôl",
+"viet": "Bạn"
+},
+{
+"bana": "Bôl buăl",
+"viet": "Bạn bè"
+},
+{
+"bana": "Bôl hök hdoih",
+"viet": "Bạn học"
+},
+{
+"bana": "Bôn kơne",
+"viet": "Bắp thịt"
+},
+{
+"bana": "Bôn kơne ti",
+"viet": "Bắp tay"
+},
+{
+"bana": "Bơ bôl",
+"viet": "Thấy mờ mờ"
+},
+{
+"bana": "Bơ lŭk",
+"viet": "Dại"
+},
+{
+"bana": "Bơ ngai gơh hơri",
+"viet": "Ca sĩ"
+},
+{
+"bana": "Bơ ngai kơně",
+"viet": "Biến chất"
+},
+{
+"bana": "Bo ngai sem bri",
+"viet": "Cầm thú"
+},
+{
+"bana": "Bơ ngai tơ tông",
+"viet": "Kẻ cắp"
+},
+{
+"bana": "Bơ ngai tơ tông",
+"viet": "Kẻ cướp"
+},
+{
+"bana": "Bơ ngai tông tơmam",
+"viet": "Kẻ trộm"
+},
+{
+"bana": "Bơ o klak",
+"viet": "Trướng bụng"
+},
+{
+"bana": "Bơ tho",
+"viet": "Giáo dục"
+},
+{
+"bana": "Bơ tho khan",
+"viet": "Bảo ban"
+},
+{
+"bana": "Bơ wih",
+"viet": "Phục vụ"
+},
+{
+"bana": "Bo đg",
+"viet": "Sình",
+"example": "Anhong ji kiơ? inh bč klak."
+},
+{
+"bana": "Bờ đg",
+"viet": "Đắp"
+},
+{
+"bana": "Bờ",
+"viet": "Chắn"
+},
+{
+"bana": "găn",
+"viet": "Chắn"
+},
+{
+"bana": "Bo jang",
+"viet": "Công tác"
+},
+{
+"bana": "Bo kla",
+"viet": "Sình bụng"
+},
+{
+"bana": "Bờ",
+"viet": "Bờ"
+},
+{
+"bana": "pơ nờ",
+"viet": "Bờ"
+},
+{
+"bana": "jih",
+"viet": "Bờ"
+},
+{
+"bana": "Bobah",
+"viet": "Nam"
+},
+{
+"bana": "Bobah",
+"viet": "Hướng cửa sông"
+},
+{
+"bana": "Bobâp",
+"viet": "Lập cập"
+},
+{
+"bana": "nă hal t",
+"viet": "Lập cập"
+},
+{
+"bana": "Bobe",
+"viet": "Con dê"
+},
+{
+"bana": "Bobe",
+"viet": "Dê"
+},
+{
+"bana": "Bobe akăn",
+"viet": "Dê cái"
+},
+{
+"bana": "Bobe bram",
+"viet": "Dê đực đầu đàn"
+},
+{
+"bana": "Bobe bri",
+"viet": "Sơn dương"
+},
+{
+"bana": "Bobe klo",
+"viet": "Dê đực"
+},
+{
+"bana": "Bơbe tơ tẫm",
+"viet": "Dê húc nhau"
+},
+{
+"bana": "Boblông",
+"viet": "Ngùn ngụt"
+},
+{
+"bana": "Bobong",
+"viet": "Cái bình bầu"
+},
+{
+"bana": "Bâr pơiôm",
+"viet": "Ba hoa"
+},
+{
+"bana": "Bâu khek",
+"viet": "Tanh"
+},
+{
+"bana": "Bâu phu dêh",
+"viet": "Thơm quá"
+},
+{
+"bana": "Bě",
+"viet": "Nào"
+},
+{
+"bana": "yơ",
+"viet": "Nào"
+},
+{
+"bana": "Bek",
+"viet": "Béo"
+},
+{
+"bana": "Bek",
+"viet": "Béo tốt"
+},
+{
+"bana": "Bek",
+"viet": "Mập"
+},
+{
+"bana": "plên",
+"viet": "Mập"
+},
+{
+"bana": "Bek alâng",
+"viet": "Bụ mẫm"
+},
+{
+"bana": "Bek dêh",
+"viet": "Béo quá"
+},
+{
+"bana": "Bek đak toh alâng",
+"viet": "Bụ sữa"
+},
+{
+"bana": "Bek thoi nhung",
+"viet": "Béo như lợn"
+},
+{
+"bana": "Bek tơ pă",
+"viet": "Béo thật"
+},
+{
+"bana": "Bek tơplě",
+"viet": "Béo phệ"
+},
+{
+"bana": "Ben",
+"viet": "Diều"
+},
+{
+"bana": "Ben iěr",
+"viet": "Diều gà"
+},
+{
+"bana": "Bề bân",
+"viet": "Nào ta"
+},
+{
+"bana": "Bi",
+"viet": "Tàn nhang"
+},
+{
+"bana": "Bi anhong",
+"viet": "Còn anh"
+},
+{
+"bana": "Bř mai",
+"viet": "Còn chị"
+},
+{
+"bana": "Bia",
+"viet": "Nàng tiên"
+},
+{
+"bana": "Bia hong",
+"viet": "Cá sấu"
+},
+{
+"bana": "bơ ya",
+"viet": "Cá sấu"
+},
+{
+"bana": "Biao",
+"viet": "Sạch trơn"
+},
+{
+"bana": "Biao",
+"viet": "Sạch"
+},
+{
+"bana": "Biao măt",
+"viet": "Sạch mắt"
+},
+{
+"bana": "Biao biônh",
+"viet": "Sạch bóng"
+},
+{
+"bana": "Bier",
+"viet": "Bia"
+},
+{
+"bana": "Bier chai",
+"viet": "Bia chai"
+},
+{
+"bana": "Bier hoyuh",
+"viet": "Bia hơi"
+},
+{
+"bana": "Bier long",
+"viet": "Bia long"
+},
+{
+"bana": "Bih",
+"viet": "Nọc độc"
+},
+{
+"bana": "Bih bih",
+"viet": "Nọc rắn"
+},
+{
+"bana": "Bih",
+"viet": "Chất độc"
+},
+{
+"bana": "bih kăm",
+"viet": "Chất độc"
+},
+{
+"bana": "Bioh",
+"viet": "Đánh võ"
+},
+{
+"bana": "Bioh",
+"viet": "Võ"
+},
+{
+"bana": "chok",
+"viet": "Võ"
+},
+{
+"bana": "Biông",
+"viet": "Cái thùng"
+},
+{
+"bana": "Bip",
+"viet": "Con vit"
+},
+{
+"bana": "Bř oh k",
+"viet": "Còn em"
+},
+{
+"bana": "Bih oh",
+"viet": "Cùng em"
+},
+{
+"bana": "Ayuh pran",
+"viet": "Sức lực"
+},
+{
+"bana": "jơhngỡm",
+"viet": "Sức lực"
+},
+{
+"bana": "Ayŭ hla soběi",
+"viet": "Dưa cải"
+},
+{
+"bana": "Ayŭ lěk kěk",
+"viet": "Chua loét"
+},
+{
+"bana": "Ayŭ",
+"viet": "Chua"
+},
+{
+"bana": "anhŭ",
+"viet": "Chua"
+},
+{
+"bana": "Axong pơm bar",
+"viet": "Chia đôi"
+},
+{
+"bana": "Aběng",
+"viet": "Bánh -"
+},
+{
+"bana": "běng",
+"viet": "Bánh -"
+},
+{
+"bana": "Ăm",
+"viet": "Bá - đg"
+},
+{
+"bana": "kuăr",
+"viet": "Bá - đg"
+},
+{
+"bana": "Ăn kơ e",
+"viet": "Cho mày, cho bạn"
+},
+{
+"bana": "Ăn kơ inh",
+"viet": "Cho tôi"
+},
+{
+"bana": "axong inh",
+"viet": "Cho tôi"
+},
+{
+"bana": "Ăn kơ oh",
+"viet": "Cho em"
+},
+{
+"bana": "Ăn pơlung",
+"viet": "Hối lộ"
+},
+{
+"bana": "pogăm đg",
+"viet": "Hối lộ"
+},
+{
+"bana": "Ăt",
+"viet": "Cái ách"
+},
+{
+"bana": "Ă ji dêh",
+"viet": "Ái"
+},
+{
+"bana": "Ăn",
+"viet": "Cấp phát"
+},
+{
+"bana": "Ăn",
+"viet": "Đưa"
+},
+{
+"bana": "Ăn bơnê",
+"viet": "Ban ơn"
+},
+{
+"bana": "Ăn bơnê",
+"viet": "Biếu"
+},
+{
+"bana": "Ăn bơnê",
+"viet": "Đãi ngộ"
+},
+{
+"bana": "Ăn kơ anhõng",
+"viet": "Cho anh"
+},
+{
+"bana": "Ăn sa",
+"viet": "Cho ăn"
+},
+{
+"bana": "hiěm",
+"viet": "Cho ăn"
+},
+{
+"bana": "tơ ane",
+"viet": "Cho ăn"
+},
+{
+"bana": "Ăn běng",
+"viet": "Cho bánh"
+},
+{
+"bana": "Ăn",
+"viet": "Cho"
+},
+{
+"bana": "axong",
+"viet": "Cho"
+},
+{
+"bana": "song",
+"viet": "Cho"
+},
+{
+"bana": "Nar blŭng",
+"viet": "Ngày khai mạc"
+},
+{
+"bana": "Ânhěm ôm",
+"viet": "Thị thối"
+},
+{
+"bana": "Âp bum",
+"viet": "Luộc khoai"
+},
+{
+"bana": "hotŭk bum",
+"viet": "Luộc khoai"
+},
+{
+"bana": "pai bum",
+"viet": "Luộc khoai"
+},
+{
+"bana": "ðp bum",
+"viet": "Luộc khoai"
+},
+{
+"bana": "Âr ăr",
+"viet": "Xôn xao"
+},
+{
+"bana": "Ăt",
+"viet": "Ách - d"
+},
+{
+"bana": "Ât kơ por",
+"viet": "Nhịn đói"
+},
+{
+"bana": "ât kơ mơh",
+"viet": "Nhịn đói"
+},
+{
+"bana": "Ăt rơmo",
+"viet": "Ách bò"
+},
+{
+"bana": "apo brư",
+"viet": "Ách bò"
+},
+{
+"bana": "Ât",
+"viet": "Ngột ngạt"
+},
+{
+"bana": "ěnh",
+"viet": "Ngột ngạt"
+},
+{
+"bana": "Âl ol",
+"viet": "Nghẹn ngào"
+},
+{
+"bana": "Ât hiâng",
+"viet": "Lưỡng lự"
+},
+{
+"bana": "Ât jơ hngăm",
+"viet": "Nín thở"
+},
+{
+"bana": "ăt jơhngăm đg",
+"viet": "Nín thở"
+},
+{
+"bana": "Ba akou đg",
+"viet": "Hiến thân"
+},
+{
+"bana": "Ba ăn đg",
+"viet": "Đưa cho"
+},
+{
+"bana": "Ba mơh đg",
+"viet": "Đưa cơm"
+},
+{
+"bana": "Ba mơh atâu",
+"viet": "Đưa cơm người chết"
+},
+{
+"bana": "Ba năr",
+"viet": "Truyền lời"
+},
+{
+"bana": "Ba nờr",
+"viet": "Truyền thanh"
+},
+{
+"bana": "Ba trong",
+"viet": "Dẫn đường"
+},
+{
+"bana": "Bah",
+"viet": "Thoa"
+},
+{
+"bana": "Bah đak",
+"viet": "Cửa sông, suối"
+},
+{
+"bana": "Bah đak",
+"viet": "Hạ lưu"
+},
+{
+"bana": "Bah đak bou",
+"viet": "Thoa nước hoa"
+},
+{
+"bana": "Bai",
+"viet": "Cái sọt"
+},
+{
+"bana": "Bai tobinh",
+"viet": "Nôi"
+},
+{
+"bana": "Bang",
+"viet": "Rõ"
+},
+{
+"bana": "Bar",
+"viet": "Chiều rộng"
+},
+{
+"bana": "Bar pah",
+"viet": "Hai bên"
+},
+{
+"bana": "Băt axong",
+"viet": "Biết cho"
+},
+{
+"bana": "Băt băi",
+"viet": "Biết được"
+},
+{
+"bana": "Băt bơih",
+"viet": "Biết rồi"
+},
+{
+"bana": "Băt bơnê",
+"viet": "Biết ơn"
+},
+{
+"bana": "Băt dang",
+"viet": "Biết chừng nào"
+},
+{
+"bana": "Băt glăi",
+"viet": "Biết tội"
+},
+{
+"bana": "Băt hlôh",
+"viet": "Nhận thức"
+},
+{
+"bana": "Băt hodrol",
+"viet": "Biết trước"
+},
+{
+"bana": "Băt hodrol đg",
+"viet": "Tiên tri"
+},
+{
+"bana": "Băt hơlăng",
+"viet": "Hiếu thảo"
+},
+{
+"bana": "gơh băt kơ mě bă",
+"viet": "Hiếu thảo"
+},
+{
+"bana": "Băt nhen",
+"viet": "Biết rõ"
+},
+{
+"bana": "Băt pôk",
+"viet": "Biết bưng"
+},
+{
+"bana": "Băt rơđah",
+"viet": "Biết chính xác"
+},
+{
+"bana": "Băt todrong jang",
+"viet": "Biết việc"
+},
+{
+"bana": "Băt topăt",
+"viet": "Biết sự thật"
+},
+{
+"bana": "Băt topăt",
+"viet": "Ngay thẳng"
+},
+{
+"bana": "Băt boh",
+"viet": "Mặn muối"
+},
+{
+"bana": "Băt bôh",
+"viet": "Làm chứng"
+},
+{
+"bana": "Băt",
+"viet": "Biết"
+},
+{
+"bana": "gơh",
+"viet": "Biết"
+},
+{
+"bana": "Bătyă t",
+"viet": "Biết điều"
+},
+{
+"bana": "Bâ",
+"viet": "Chúng mình, chúng ta"
+},
+{
+"bana": "ba",
+"viet": "Chúng mình, chúng ta"
+},
+{
+"bana": "Bân",
+"viet": "Ta"
+},
+{
+"bana": "Bân năm",
+"viet": "Ta đi"
+},
+{
+"bana": "bân yak",
+"viet": "Ta đi"
+},
+{
+"bana": "Amrě axě",
+"viet": "Ơt xanh"
+},
+{
+"bana": "Amrě đum",
+"viet": "Ơt chín"
+},
+{
+"bana": "Amrě ho",
+"viet": "Ơt cay"
+},
+{
+"bana": "Amrě ak",
+"viet": "Ớt quạ"
+},
+{
+"bana": "Amrě kok",
+"viet": "Ớt trắng"
+},
+{
+"bana": "Amrě ngěng",
+"viet": "Ớt bay"
+},
+{
+"bana": "Amui golŭng",
+"viet": "Bụi mù"
+},
+{
+"bana": "An",
+"viet": "Án"
+},
+{
+"bana": "An d",
+"viet": "Yên",
+"example": "An gre bobit."
+},
+{
+"bana": "An axeh",
+"viet": "Yên ngựa"
+},
+{
+"bana": "An gre",
+"viet": "Yên xe"
+},
+{
+"bana": "Anam",
+"viet": "Chuỗi hạt"
+},
+{
+"bana": "Anam hu",
+"viet": "Chuỗi bạc"
+},
+{
+"bana": "Anam mah",
+"viet": "Chuỗi vàng"
+},
+{
+"bana": "Anao đang",
+"viet": "Mới xong"
+},
+{
+"bana": "Anao wih",
+"viet": "Mới về"
+},
+{
+"bana": "Anao yak",
+"viet": "Mới đi"
+},
+{
+"bana": "Braih anao",
+"viet": "Mới tinh"
+},
+{
+"bana": "Anao",
+"viet": "Mới"
+},
+{
+"bana": "hle",
+"viet": "Mới"
+},
+{
+"bana": "plng",
+"viet": "Mới"
+},
+{
+"bana": "Anau hơiơch",
+"viet": "Mới đẻ"
+},
+{
+"bana": "Anau tođah",
+"viet": "Mới nảy mầm"
+},
+{
+"bana": "Ană anap",
+"viet": "Phấn khởi"
+},
+{
+"bana": "hal",
+"viet": "Phấn khởi"
+},
+{
+"bana": "phok",
+"viet": "Phấn khởi"
+},
+{
+"bana": "Ană hddg",
+"viet": "Sôi nổi"
+},
+{
+"bana": "Ană hal",
+"viet": "Vui mừng"
+},
+{
+"bana": "Ană",
+"viet": "Mừng"
+},
+{
+"bana": "iă",
+"viet": "Mừng"
+},
+{
+"bana": "Anăn d",
+"viet": "Tên",
+"example": "Oh anăm măt bu?"
+},
+{
+"bana": "Anăn bu",
+"viet": "Tên gì"
+},
+{
+"bana": "Anăn kodih",
+"viet": "Danh từ riêng"
+},
+{
+"bana": "Anăn măt",
+"viet": "Họ và tên"
+},
+{
+"bana": "Anăn pođī",
+"viet": "Danh từ chung"
+},
+{
+"bana": "anăn măt plěi nâr hobī",
+"viet": "Danh từ chung"
+},
+{
+"bana": "Anăn toplih",
+"viet": "Bí danh"
+},
+{
+"bana": "Anăng blŭng",
+"viet": "Tưới tiêu"
+},
+{
+"bana": "Anăng tơm",
+"viet": "Lối ra"
+},
+{
+"bana": "Anâm",
+"viet": "Ấp"
+},
+{
+"bana": "anăm",
+"viet": "Ấp"
+},
+{
+"bana": "Aně bohle",
+"viet": "Đừng nghịch"
+},
+{
+"bana": "Aně ngor",
+"viet": "Đừng phá"
+},
+{
+"bana": "Aně pơm",
+"viet": "Đừng làm"
+},
+{
+"bana": "Aně yak",
+"viet": "Đừng đi"
+},
+{
+"bana": "năm ně",
+"viet": "Đừng đi"
+},
+{
+"bana": "Apinh jet",
+"viet": "Xin hỏi"
+},
+{
+"bana": "Apo konê",
+"viet": "Ác mộng"
+},
+{
+"bana": "Apo đg",
+"viet": "Mê, mơ",
+"example": "Măng hrẽi ĩnh tep apo bôh anhõng."
+},
+{
+"bana": "Apo bôh",
+"viet": "Mơ thấy"
+},
+{
+"bana": "Apơi đg",
+"viet": "Ước mơ"
+},
+{
+"bana": "Apŭng",
+"viet": "Huyện"
+},
+{
+"bana": "pŭng",
+"viet": "Huyện"
+},
+{
+"bana": "Arăng",
+"viet": "Cứng"
+},
+{
+"bana": "horăk",
+"viet": "Cứng"
+},
+{
+"bana": "khăng",
+"viet": "Cứng"
+},
+{
+"bana": "Arăng găng",
+"viet": "Cứng cỏi"
+},
+{
+"bana": "kodăng",
+"viet": "Cứng cỏi"
+},
+{
+"bana": "hơ rök",
+"viet": "Cứng cỏi"
+},
+{
+"bana": "Arăng grăng",
+"viet": "Khoẻ mạnh"
+},
+{
+"bana": "grăng akâu",
+"viet": "Khoẻ mạnh"
+},
+{
+"bana": "Arăng",
+"viet": "Cứng cáp"
+},
+{
+"bana": "djrăng",
+"viet": "Cứng cáp"
+},
+{
+"bana": "Areh dêh",
+"viet": "Ghét lắm"
+},
+{
+"bana": "Areh",
+"viet": "Ghét"
+},
+{
+"bana": "hơreh",
+"viet": "Ghét"
+},
+{
+"bana": "Areng",
+"viet": "Cua"
+},
+{
+"bana": "Areng đak doxi",
+"viet": "Cua biển"
+},
+{
+"bana": "Areng tona",
+"viet": "Cua đồng"
+},
+{
+"bana": "Areng",
+"viet": "Con cua"
+},
+{
+"bana": "kotam",
+"viet": "Con cua"
+},
+{
+"bana": "Arih dg",
+"viet": "Sống"
+},
+{
+"bana": "Arih dunh",
+"viet": "Sống lâu"
+},
+{
+"bana": "jonoi sot",
+"viet": "Sống lâu"
+},
+{
+"bana": "arih sot",
+"viet": "Sống lâu"
+},
+{
+"bana": "Arih sa",
+"viet": "Đời sống"
+},
+{
+"bana": "Arih sa",
+"viet": "Sinh sống"
+},
+{
+"bana": "Arih sa rogěi",
+"viet": "Sức sống"
+},
+{
+"bana": "Arih sot",
+"viet": "Sống thọ"
+},
+{
+"bana": "Ataih",
+"viet": "Hẻo lánh"
+},
+{
+"bana": "Ataih băl",
+"viet": "Xa nhau"
+},
+{
+"bana": "Ataih dêh",
+"viet": "Xa lắm"
+},
+{
+"bana": "Ataih kơ hnam",
+"viet": "Xa nhà"
+},
+{
+"bana": "Ată",
+"viet": "Nhắn"
+},
+{
+"bana": "Ată ăn",
+"viet": "Gửi cho"
+},
+{
+"bana": "Ată nâr",
+"viet": "Nhắn tin"
+},
+{
+"bana": "Atăr reo",
+"viet": "Quai gùi"
+},
+{
+"bana": "tăr hokăt",
+"viet": "Quai gùi"
+},
+{
+"bana": "Atâng brai",
+"viet": "Khung dệt vải"
+},
+{
+"bana": "Atâu",
+"viet": "Ma"
+},
+{
+"bana": "atău",
+"viet": "Ma"
+},
+{
+"bana": "Ate",
+"viet": "Bột nấu thịt"
+},
+{
+"bana": "Athěi",
+"viet": "Hãy"
+},
+{
+"bana": "Athěi jet",
+"viet": "Hãy hỏi"
+},
+{
+"bana": "Athěi pơm",
+"viet": "Khuyên làm"
+},
+{
+"bana": "Athěi poma",
+"viet": "Hãy nói"
+},
+{
+"bana": "Athěi",
+"viet": "Bảo"
+},
+{
+"bana": "khan",
+"viet": "Bảo"
+},
+{
+"bana": "wơh",
+"viet": "Bảo"
+},
+{
+"bana": "Bing kơ kial",
+"viet": "Khuất gió"
+},
+{
+"bana": "Bla",
+"viet": "Lá lách"
+},
+{
+"bana": "kăng",
+"viet": "Lá lách"
+},
+{
+"bana": "Blach",
+"viet": "Yết hầu"
+},
+{
+"bana": "dang holong",
+"viet": "Yết hầu"
+},
+{
+"bana": "Blah",
+"viet": "Bổ"
+},
+{
+"bana": "Blah",
+"viet": "Phá vỡ"
+},
+{
+"bana": "Blah",
+"viet": "Tấm"
+},
+{
+"bana": "Blah along ŭnh",
+"viet": "Bổ củi"
+},
+{
+"bana": "Blah ayăt",
+"viet": "Đánh giặc"
+},
+{
+"bana": "toblah",
+"viet": "Đánh giặc"
+},
+{
+"bana": "Blah che",
+"viet": "Tấm vải"
+},
+{
+"bana": "Blah ir",
+"viet": "Mổ gà"
+},
+{
+"bana": "Blah kolâp",
+"viet": "Đánh úp"
+},
+{
+"bana": "Blah kram",
+"viet": "Chẻ tre"
+},
+{
+"bana": "Blah nhũng",
+"viet": "Mổ heo"
+},
+{
+"bana": "Blah rơ mo",
+"viet": "Mổ bò"
+},
+{
+"bana": "Blah torar",
+"viet": "Xâm lược"
+},
+{
+"bana": "Blah",
+"viet": "Chiếc"
+},
+{
+"bana": "pôm",
+"viet": "Chiếc"
+},
+{
+"bana": "tong",
+"viet": "Chiếc"
+},
+{
+"bana": "Blai běnh",
+"viet": "Tràn đầy"
+},
+{
+"bana": "Blai",
+"viet": "Ăm ắp"
+},
+{
+"bana": "momân",
+"viet": "Ăm ắp"
+},
+{
+"bana": "Blang pơ kau đg",
+"viet": "Nở hoa"
+},
+{
+"bana": "Blang",
+"viet": "Nở"
+},
+{
+"bana": "pơpông",
+"viet": "Nở"
+},
+{
+"bana": "Blăl",
+"viet": "Tục"
+},
+{
+"bana": "Blěk",
+"viet": "Lên cơn tức"
+},
+{
+"bana": "Blep",
+"viet": "Chính xác"
+},
+{
+"bana": "đam",
+"viet": "Chính xác"
+},
+{
+"bana": "đum",
+"viet": "Chính xác"
+},
+{
+"bana": "Blěi",
+"viet": "Chửi"
+},
+{
+"bana": "Blěi blăl",
+"viet": "Chửi tục"
+},
+{
+"bana": "Blẽi kơ bă, mẽ",
+"viet": "Chửi cha, mẹ"
+},
+{
+"bana": "Blěk",
+"viet": "Tức"
+},
+{
+"bana": "Blěk ơh",
+"viet": "Bực tức"
+},
+{
+"bana": "ơh mil",
+"viet": "Bực tức"
+},
+{
+"bana": "suek",
+"viet": "Bực tức"
+},
+{
+"bana": "yo",
+"viet": "Bực tức"
+},
+{
+"bana": "Blo",
+"viet": "Trái blo"
+},
+{
+"bana": "Blong sung",
+"viet": "Cán rìu"
+},
+{
+"bana": "Blong",
+"viet": "Cán"
+},
+{
+"bana": "gor",
+"viet": "Cán"
+},
+{
+"bana": "Blờng blẽnh",
+"viet": "Lỏng lẻo"
+},
+{
+"bana": "Blôk",
+"viet": "Sôi"
+},
+{
+"bana": "Blôk",
+"viet": "Bọt"
+},
+{
+"bana": "kơmuh",
+"viet": "Bọt"
+},
+{
+"bana": "Blôk đak",
+"viet": "Bọt nước"
+},
+{
+"bana": "komuh đak",
+"viet": "Bọt nước"
+},
+{
+"bana": "Blông",
+"viet": "Bùng"
+},
+{
+"bana": "Blông",
+"viet": "Nói khoác"
+},
+{
+"bana": "Blông đôh",
+"viet": "Bùng nổ"
+},
+{
+"bana": "Along dopang",
+"viet": "Cây dầu"
+},
+{
+"bana": "Along drih",
+"viet": "Đa"
+},
+{
+"bana": "along jri",
+"viet": "Đa"
+},
+{
+"bana": "Along duơh",
+"viet": "Đũa"
+},
+{
+"bana": "Along gao",
+"viet": "Cây dừa"
+},
+{
+"bana": "Along gong",
+"viet": "Cây cầu"
+},
+{
+"bana": "bor",
+"viet": "Cây cầu"
+},
+{
+"bana": "gơng",
+"viet": "Cây cầu"
+},
+{
+"bana": "Along hongo",
+"viet": "Cây thông"
+},
+{
+"bana": "Along honong",
+"viet": "Đòn"
+},
+{
+"bana": "Along hopuih",
+"viet": "Chổi"
+},
+{
+"bana": "Along hobo",
+"viet": "Cây ngô"
+},
+{
+"bana": "Along jing",
+"viet": "Cây tốt"
+},
+{
+"bana": "Along jra",
+"viet": "Gậy"
+},
+{
+"bana": "Along jri",
+"viet": "Cây đa"
+},
+{
+"bana": "Along ke rěk",
+"viet": "Ke"
+},
+{
+"bana": "Along khir",
+"viet": "Cái bừa"
+},
+{
+"bana": "Along khir",
+"viet": "Cái cào"
+},
+{
+"bana": "Along khir",
+"viet": "Cào"
+},
+{
+"bana": "Along köng",
+"viet": "Cái cân"
+},
+{
+"bana": "Along kotao",
+"viet": "Cây mía"
+},
+{
+"bana": "Along kotonh",
+"viet": "Cây dương xỉ"
+},
+{
+"bana": "Along kram",
+"viet": "Cây tre"
+},
+{
+"bana": "Along krăk",
+"viet": "Gỗ trắc"
+},
+{
+"bana": "Along kreng",
+"viet": "Cây mận"
+},
+{
+"bana": "Along krěng",
+"viet": "Cây trầm"
+},
+{
+"bana": "Along kro",
+"viet": "Cây khô"
+},
+{
+"bana": "Along pok",
+"viet": "Cây ngã"
+},
+{
+"bana": "Along po o",
+"viet": "Cây lồ ô"
+},
+{
+"bana": "Along pogang",
+"viet": "Cây thuốc"
+},
+{
+"bana": "Along pole",
+"viet": "Cây le"
+},
+{
+"bana": "Along pole",
+"viet": "Le"
+},
+{
+"bana": "Along poto",
+"viet": "Thước đo"
+},
+{
+"bana": "Along rek",
+"viet": "Cái thước"
+},
+{
+"bana": "Along rek",
+"viet": "Thước kẻ"
+},
+{
+"bana": "Along ronhong",
+"viet": "Cây cao"
+},
+{
+"bana": "Along sa plěi",
+"viet": "Cây ăn quả"
+},
+{
+"bana": "Along sor",
+"viet": "Lò xo"
+},
+{
+"bana": "Along trang",
+"viet": "Cây lau"
+},
+{
+"bana": "Along trang",
+"viet": "Lau"
+},
+{
+"bana": "Along ŭnh",
+"viet": "Củi"
+},
+{
+"bana": "reh",
+"viet": "Củi"
+},
+{
+"bana": "Akôih",
+"viet": "Cạo"
+},
+{
+"bana": "hokôih",
+"viet": "Cạo"
+},
+{
+"bana": "Akơn",
+"viet": "Bục"
+},
+{
+"bana": "Akơn botho",
+"viet": "Bục giảng"
+},
+{
+"bana": "Akum hodai",
+"viet": "Hội nghị"
+},
+{
+"bana": "Akung sem",
+"viet": "Mỏ chim"
+},
+{
+"bana": "Akŭng",
+"viet": "Môi"
+},
+{
+"bana": "hokŭng",
+"viet": "Môi"
+},
+{
+"bana": "sokŭng",
+"viet": "Môi"
+},
+{
+"bana": "Akŭng",
+"viet": "Mỏ"
+},
+{
+"bana": "sokŭng",
+"viet": "Mỏ"
+},
+{
+"bana": "Alah",
+"viet": "Lười"
+},
+{
+"bana": "Alah",
+"viet": "Lười biếng"
+},
+{
+"bana": "holah",
+"viet": "Lười biếng"
+},
+{
+"bana": "Alal",
+"viet": "Ông sáo"
+},
+{
+"bana": "Alal",
+"viet": "Sáo"
+},
+{
+"bana": "Alao",
+"viet": "Nứa"
+},
+{
+"bana": "phat",
+"viet": "Nứa"
+},
+{
+"bana": "Alăk",
+"viet": "Rượu trắng"
+},
+{
+"bana": "Alăk bou khôi",
+"viet": "Rượu khê"
+},
+{
+"bana": "Alâng",
+"viet": "Tốt"
+},
+{
+"bana": "Alâng akâu",
+"viet": "Bổ"
+},
+{
+"bana": "Alâng akâu",
+"viet": "Bổ dưỡng"
+},
+{
+"bana": "Alâng dêh",
+"viet": "Tốt lắm"
+},
+{
+"bana": "Alâng gloh",
+"viet": "Tốt hơn, tốt lắm"
+},
+{
+"bana": "Alâng hođăl",
+"viet": "Xinh xắn"
+},
+{
+"bana": "Alâng lăp",
+"viet": "Đẹp mắt"
+},
+{
+"bana": "Alâng liěm",
+"viet": "Tốt đẹp"
+},
+{
+"bana": "Alâng rõ",
+"viet": "Kì diệu"
+},
+{
+"bana": "Alâng rõ",
+"viet": "Lộng lẫy"
+},
+{
+"bana": "Alâng rõ",
+"viet": "Nguy nga"
+},
+{
+"bana": "Alâng rơhong",
+"viet": "Xinh tươi"
+},
+{
+"bana": "Alâng topă",
+"viet": "Tốt thật"
+},
+{
+"bana": "Aleh",
+"viet": "Dính"
+},
+{
+"bana": "hrp",
+"viet": "Dính"
+},
+{
+"bana": "Along",
+"viet": "Cây"
+},
+{
+"bana": "Along bơm",
+"viet": "Bơm"
+},
+{
+"bana": "Along adrih",
+"viet": "Cây tươi"
+},
+{
+"bana": "Along chi",
+"viet": "Bút"
+},
+{
+"bana": "Along chi",
+"viet": "Bút chì"
+},
+{
+"bana": "Along chi",
+"viet": "Cây bút"
+},
+{
+"bana": "Along chi đak mŭk",
+"viet": "Bút mực"
+},
+{
+"bana": "Along chơ choh",
+"viet": "Cái thớt"
+},
+{
+"bana": "Along chovêu",
+"viet": "Cây cong"
+},
+{
+"bana": "along đong",
+"viet": "Cây cong"
+},
+{
+"bana": "Along chrah",
+"viet": "Cây cọ"
+},
+{
+"bana": "Ala kơ hnam",
+"viet": "Dưới nhà"
+},
+{
+"bana": "Ala",
+"viet": "Dưới"
+},
+{
+"bana": "korôm",
+"viet": "Dưới"
+},
+{
+"bana": "sŭng",
+"viet": "Dưới"
+},
+{
+"bana": "Anăn plei nâr",
+"viet": "Danh từ"
+},
+{
+"bana": "anăn plěi năr",
+"viet": "Danh từ"
+},
+{
+"bana": "Anăr dơmônh",
+"viet": "Ngày mốt"
+},
+{
+"bana": "tơmônh",
+"viet": "Ngày mốt"
+},
+{
+"bana": "Anăr pogê",
+"viet": "Lúc sáng"
+},
+{
+"bana": "Anăr toning",
+"viet": "Ngày mai"
+},
+{
+"bana": "doning",
+"viet": "Ngày mai"
+},
+{
+"bana": "Ataih yaih",
+"viet": "Heo hút"
+},
+{
+"bana": "Aběn",
+"viet": "Váy"
+},
+{
+"bana": "Aběn",
+"viet": "Quần"
+},
+{
+"bana": "Abou đak doxř",
+"viet": "Ốc biển"
+},
+{
+"bana": "Abou iě",
+"viet": "Ốc vặn"
+},
+{
+"bana": "Abou lê",
+"viet": "Ốc bươu"
+},
+{
+"bana": "Abou lê dreng",
+"viet": "Ốc bươu vàng"
+},
+{
+"bana": "Achăng",
+"viet": "Thả"
+},
+{
+"bana": "Achăng",
+"viet": "Bỏ đi"
+},
+{
+"bana": "hŭt lề",
+"viet": "Bỏ đi"
+},
+{
+"bana": "Achăng ăn",
+"viet": "Khoan hồng"
+},
+{
+"bana": "Achăng hiơt",
+"viet": "Bỏ quên"
+},
+{
+"bana": "Achăng hut",
+"viet": "Bãi bỏ"
+},
+{
+"bana": "Achăng hut",
+"viet": "Buông luôn"
+},
+{
+"bana": "Achăng kơpô",
+"viet": "Thả trâu"
+},
+{
+"bana": "Achăng lễ",
+"viet": "Bãi miễn"
+},
+{
+"bana": "Achăng lễ",
+"viet": "Buông xuôi"
+},
+{
+"bana": "Achăng ti",
+"viet": "Buông tay"
+},
+{
+"bana": "Achăng ti",
+"viet": "Thả tay"
+},
+{
+"bana": "Achăng tŭk",
+"viet": "Bỏ luôn"
+},
+{
+"bana": "Achő along ŭnh g",
+"viet": "Bó củi"
+},
+{
+"bana": "Achő anhot",
+"viet": "Bó rau"
+},
+{
+"bana": "Achỗ",
+"viet": "Bó"
+},
+{
+"bana": "hơ chỗ",
+"viet": "Bó"
+},
+{
+"bana": "Adar",
+"viet": "Nhẹ nhàng"
+},
+{
+"bana": "do dar",
+"viet": "Nhẹ nhàng"
+},
+{
+"bana": "todar",
+"viet": "Nhẹ nhàng"
+},
+{
+"bana": "hodar",
+"viet": "Nhẹ nhàng"
+},
+{
+"bana": "Adra",
+"viet": "Giàn xới"
+}
+]
