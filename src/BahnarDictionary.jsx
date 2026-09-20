@@ -1,5 +1,5 @@
 import { Fragment, useMemo, useState } from "react";
-import { ArrowLeftRight, Search, BookOpenText } from "lucide-react";
+import { ArrowLeftRight, Search, BookOpenText, Languages } from "lucide-react";
 import DICT_RAW from "../bana_viet_dict.json";
 
 /* =========================================================================
@@ -10,9 +10,6 @@ import DICT_RAW from "../bana_viet_dict.json";
 
 /* =========================================================================
  * 2) STYLE TUỲ BIẾN (phần không thể làm bằng Tailwind thuần)
- *    - Import font
- *    - Dải hoa văn thổ cẩm (repeating-linear-gradient cần CSS thường)
- *    Toàn bộ phần còn lại của giao diện dùng Tailwind utility classes.
  * ======================================================================= */
 const FONT_IMPORT_CSS = `
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
@@ -26,24 +23,40 @@ const WOVEN_BAR_STYLE = {
 const FONT_SERIF = { fontFamily: "'Fraunces', serif" };
 const FONT_SANS = { fontFamily: "'Be Vietnam Pro', sans-serif" };
 
-// Ba màu điểm nhấn xoay vòng cho từng thẻ kết quả, tạo cảm giác sinh động
 const ACCENT_BORDERS = ["border-l-teal-400", "border-l-rose-400", "border-l-amber-400"];
 const ACCENT_MARKERS = ["marker:text-teal-500", "marker:text-rose-500", "marker:text-amber-500"];
 
 /* =========================================================================
- * 3) HÀM TIỆN ÍCH
+ * 3) CẤU HÌNH TÌM KIẾM  (chỉnh ở đây)
  * ======================================================================= */
+
+// Loại từ / hư từ thường không có từ tương ứng trong tiếng Bahnar
+// (ví dụ "con" trong "con heo"). Các từ này KHÔNG bị xoá: chúng vẫn được tra,
+// nhưng bị làm mờ, không đưa vào bản ghép và không làm nhiễu danh sách kết quả.
+// Muốn thêm/bớt cứ sửa danh sách bên dưới.
+const LOOSE_WORDS = {
+  vb: new Set(["con", "cái", "chiếc", "những", "các", "một", "mấy", "cây", "quả", "trái"]),
+  bv: new Set(),
+};
+
+// Cụm dài nhất (tính theo số từ) được thử khi ghép cụm, ví dụ "cây lúa nước" = 3
+const MAX_PHRASE_WORDS = 6;
+
+/* =========================================================================
+ * 4) HÀM TIỆN ÍCH
+ * ======================================================================= */
+
+// NFC: tránh lỗi "gõ đúng mà không khớp" do dấu tiếng Việt được lưu dạng tổ hợp
+// (a + dấu) trong JSON nhưng bàn phím lại gõ dạng dựng sẵn (hoặc ngược lại).
 function normalize(s) {
-  return (s || "").toLowerCase().trim();
+  return String(s ?? "").normalize("NFC").toLowerCase().trim();
 }
 
-// Tách câu nhập thành các từ riêng lẻ (bỏ khoảng trắng thừa và dấu câu),
-// đồng thời loại bỏ từ trùng lặp.
-function tokenize(s) {
-  const parts = normalize(s)
-    .split(/[\s,;.!?:()"“”/\\|]+/)
-    .filter(Boolean);
-  return [...new Set(parts)];
+const SEPARATORS = /[\s,;.!?:()"“”/\\|]+/;
+
+// Tách câu thành danh sách từ THEO ĐÚNG THỨ TỰ (giữ cả từ lặp)
+function splitWords(s) {
+  return normalize(s).split(SEPARATORS).filter(Boolean);
 }
 
 function escapeRegExp(s) {
@@ -52,8 +65,7 @@ function escapeRegExp(s) {
 
 /**
  * Chấm điểm một mục từ so với câu tìm kiếm.
- * - Khớp nguyên cụm (cả câu) được điểm cao nhất, để các từ ghép như
- *   "cây lúa" vẫn lên đầu khi người dùng gõ đúng cụm.
+ * - Khớp nguyên cụm (cả câu) được điểm cao nhất.
  * - Sau đó tới từng từ riêng lẻ: khớp nguyên từ > bắt đầu bằng > chứa.
  * - Mục nào khớp nhiều từ trong câu hơn thì điểm càng cao.
  */
@@ -72,7 +84,6 @@ function scoreEntry(key, words, phrase, tokens) {
         best = 100;
         break;
       }
-      // Từ 1 ký tự chỉ được khớp nguyên từ, tránh ra quá nhiều kết quả nhiễu
       if (t.length >= 2) {
         if (w.startsWith(t)) best = Math.max(best, 60);
         else if (w.includes(t)) best = Math.max(best, 30);
@@ -84,6 +95,45 @@ function scoreEntry(key, words, phrase, tokens) {
     }
   }
   return score + matched * 20;
+}
+
+/**
+ * Ghép cụm dài nhất trước (forward maximum matching).
+ * Với "con heo": thử "con heo" → nếu không có trong từ điển thì thử "con",
+ * rồi "heo". Từ nào không tra được sẽ có entry = null.
+ */
+function segment(words, grouped, maxLen) {
+  const segs = [];
+  let i = 0;
+  while (i < words.length) {
+    let found = null;
+    for (let len = Math.min(maxLen, words.length - i); len >= 1; len--) {
+      const cand = words.slice(i, i + len).join(" ");
+      if (grouped.has(cand)) {
+        found = { text: cand, entry: grouped.get(cand), len };
+        break;
+      }
+    }
+    if (found) {
+      segs.push(found);
+      i += found.len;
+    } else {
+      segs.push({ text: words[i], entry: null, len: 1 });
+      i += 1;
+    }
+  }
+  return segs;
+}
+
+// Gợi ý các mục từ gần giống cho một từ không tra được chính xác
+function suggest(token, grouped, limit = 3) {
+  const out = [];
+  for (const [key, g] of grouped) {
+    const s = scoreEntry(key, g.words, token, [token]);
+    if (s > 0) out.push({ key, s, display: g.display });
+  }
+  out.sort((a, b) => b.s - a.s || a.key.length - b.key.length || a.key.localeCompare(b.key));
+  return out.slice(0, limit);
 }
 
 // Tô sáng tất cả các từ khoá (cả cụm lẫn từng từ) trong văn bản
@@ -107,7 +157,7 @@ function Highlighted({ text, terms }) {
 }
 
 /* =========================================================================
- * 4) COMPONENT CHÍNH
+ * 5) COMPONENT CHÍNH
  * ======================================================================= */
 export default function BahnarDictionary() {
   const [direction, setDirection] = useState("bv"); // 'bv' = Bahnar->Việt, 'vb' = Việt->Bahnar
@@ -116,22 +166,27 @@ export default function BahnarDictionary() {
   const grouped = useMemo(() => {
     const map = new Map();
     for (const row of DICT_RAW) {
-      const bana = row.bana;
-      const viet = row.viet;
-      const example = row.example;
-      const src = direction === "bv" ? bana : viet;
-      const tgt = direction === "bv" ? viet : bana;
-      const key = normalize(src);
+      const src = direction === "bv" ? row.bana : row.viet;
+      const tgt = direction === "bv" ? row.viet : row.bana;
+      // Khoá đã bỏ dấu câu, cùng cách tách với câu người dùng nhập
+      const words = splitWords(src);
+      const key = words.join(" ");
       if (!key) continue;
       if (!map.has(key)) {
-        map.set(key, { display: src, words: key.split(/\s+/), meanings: [], examples: [] });
+        map.set(key, { display: src, words, meanings: [], examples: [] });
       }
       const g = map.get(key);
-      if (!g.meanings.includes(tgt)) g.meanings.push(tgt);
-      if (example && !g.examples.includes(example)) g.examples.push(example);
+      if (tgt && !g.meanings.includes(tgt)) g.meanings.push(tgt);
+      if (row.example && !g.examples.includes(row.example)) g.examples.push(row.example);
     }
     return map;
   }, [direction]);
+
+  const maxLen = useMemo(() => {
+    let m = 1;
+    for (const g of grouped.values()) m = Math.max(m, g.words.length);
+    return Math.min(m, MAX_PHRASE_WORDS);
+  }, [grouped]);
 
   const entryCount = useMemo(() => {
     const s = new Set();
@@ -139,17 +194,38 @@ export default function BahnarDictionary() {
     return s.size;
   }, []);
 
-  // Tách câu nhập thành cụm đầy đủ + từng từ riêng lẻ
-  const { phrase, tokens, terms } = useMemo(() => {
-    const phrase = normalize(query).replace(/\s+/g, " ");
-    const tokens = tokenize(query);
-    const terms = [
-      ...new Set([phrase, ...tokens.filter((t) => t.length >= 2)]),
-    ]
+  // words: các từ theo thứ tự · tokens: từ "có nghĩa" dùng để chấm điểm
+  // (bỏ loại từ như "con" nếu câu còn từ khác)
+  const { phrase, words, tokens, terms } = useMemo(() => {
+    const words = splitWords(query);
+    const phrase = words.join(" ");
+    const uniq = [...new Set(words)];
+    const loose = LOOSE_WORDS[direction];
+    const content = uniq.filter((w) => !loose.has(w));
+    const tokens = content.length > 0 ? content : uniq;
+    const terms = [...new Set([phrase, ...tokens.filter((t) => t.length >= 2)])]
       .filter(Boolean)
-      .sort((a, b) => b.length - a.length); // ưu tiên khớp cụm dài trước khi tô sáng
-    return { phrase, tokens, terms };
-  }, [query]);
+      .sort((a, b) => b.length - a.length);
+    return { phrase, words, tokens, terms };
+  }, [query, direction]);
+
+  // Dịch từng từ: ghép cụm dài nhất trước, rồi tách lẻ
+  const { segments, draft } = useMemo(() => {
+    if (words.length === 0) return { segments: [], draft: "" };
+    const loose = LOOSE_WORDS[direction];
+    const segs = segment(words, grouped, maxLen);
+    const hasContent = segs.some((s) => !loose.has(s.text));
+    const segments = segs.map((s) => ({
+      ...s,
+      loose: hasContent && loose.has(s.text),
+      suggestions: s.entry ? [] : suggest(s.text, grouped),
+    }));
+    const draft = segments
+      .filter((s) => !s.loose)
+      .map((s) => (s.entry ? s.entry.meanings[0] : `[${s.text}]`))
+      .join(" ");
+    return { segments, draft };
+  }, [words, grouped, maxLen, direction]);
 
   const results = useMemo(() => {
     if (tokens.length === 0) return [];
@@ -167,12 +243,15 @@ export default function BahnarDictionary() {
     return scored.slice(0, 60);
   }, [phrase, tokens, grouped]);
 
+  const showBreakdown = words.length > 1 && segments.length > 0;
+  const hasAnything = results.length > 0 || segments.some((s) => s.entry);
+
   const srcLabel = direction === "bv" ? "Tiếng Bahnar" : "Tiếng Việt";
   const tgtLabel = direction === "bv" ? "Tiếng Việt" : "Tiếng Bahnar";
   const placeholder =
     direction === "bv"
       ? "Nhập từ hoặc cả câu Bahnar, ví dụ: akap, ake along…"
-      : "Nhập từ hoặc cả câu tiếng Việt, ví dụ: bẫy, sừng, cây lúa…";
+      : "Nhập từ hoặc cả câu tiếng Việt, ví dụ: bẫy, sừng, con heo…";
 
   function swap() {
     setDirection((d) => (d === "bv" ? "vb" : "bv"));
@@ -246,14 +325,71 @@ export default function BahnarDictionary() {
               <span>{tgtLabel}</span>
             </div>
 
-            {results.length === 0 ? (
+            {!query.trim() ? (
               <div className="text-sm text-stone-400 leading-relaxed">
-                {query.trim()
-                  ? "Không tìm thấy từ nào phù hợp trong từ điển."
-                  : "Kết quả tra cứu sẽ hiện ở đây."}
+                Kết quả tra cứu sẽ hiện ở đây.
+              </div>
+            ) : !hasAnything ? (
+              <div className="text-sm text-stone-400 leading-relaxed">
+                Không tìm thấy từ nào phù hợp trong từ điển.
               </div>
             ) : (
               <div className="flex flex-col gap-2.5 overflow-y-auto max-h-72 sm:max-h-80 pr-1">
+                {/* ----- Dịch từng từ ----- */}
+                {showBreakdown && (
+                  <div className="rounded-xl border border-amber-200 bg-amber-50/70 p-3">
+                    <div className="flex items-center gap-1.5 text-xs font-semibold text-amber-700 mb-2">
+                      <Languages size={14} />
+                      <span>Dịch từng từ</span>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      {segments.map((s, i) => (
+                        <div
+                          key={i}
+                          className={`rounded-lg border bg-white px-2.5 py-1.5 ${
+                            s.entry ? "border-teal-200" : "border-dashed border-stone-300"
+                          } ${s.loose ? "opacity-50" : ""}`}
+                        >
+                          <div className="text-[11px] text-stone-400">
+                            {s.text}
+                            {s.loose && " (loại từ)"}
+                          </div>
+                          <div
+                            className={`text-[15px] font-semibold ${
+                              s.entry ? "text-stone-800" : "text-stone-400"
+                            }`}
+                            style={FONT_SERIF}
+                          >
+                            {s.entry ? s.entry.meanings[0] : "?"}
+                          </div>
+                          {s.entry && s.entry.meanings.length > 1 && (
+                            <div className="text-[11px] text-stone-400">
+                              +{s.entry.meanings.length - 1} nghĩa khác
+                            </div>
+                          )}
+                          {!s.entry && s.suggestions.length > 0 && (
+                            <div className="text-[11px] text-stone-400">
+                              gần giống: {s.suggestions.map((x) => x.display).join(", ")}
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="mt-2.5 text-sm text-stone-700">
+                      <span className="text-stone-400">Bản ghép từng từ: </span>
+                      <span className="font-semibold" style={FONT_SERIF}>
+                        {draft}
+                      </span>
+                    </div>
+                    <div className="mt-1 text-[11px] text-stone-400 leading-snug">
+                      Chỉ ghép theo từng từ, ngữ pháp Bahnar có thể khác. Hãy đối chiếu với các mục bên dưới.
+                    </div>
+                  </div>
+                )}
+
+                {/* ----- Danh sách mục từ liên quan ----- */}
                 {results.map((r, i) => {
                   const accent = i % 3;
                   return (
@@ -283,7 +419,7 @@ export default function BahnarDictionary() {
         </div>
 
         <div className="text-center mt-6 text-xs text-stone-400">
-          Nhập một từ hoặc cả câu · hệ thống tự tách từng từ để tra cứu
+          Nhập một từ hoặc cả câu · hệ thống ưu tiên khớp cụm dài nhất, rồi tự tách từng từ để tra cứu
         </div>
       </div>
     </div>
