@@ -48,6 +48,19 @@ export function splitWords(s) {
   return normalize(s).split(SEPARATORS).filter(Boolean);
 }
 
+// Như splitWords nhưng GIỮ NGUYÊN hoa/thường — dùng để nhận diện danh từ
+// riêng (viết hoa) trước khi normalize() làm mất thông tin đó.
+function splitRawWords(s) {
+  return String(s ?? "").normalize("NFC").trim().split(SEPARATORS).filter(Boolean);
+}
+
+// Từ viết hoa chữ cái đầu và không nằm ở đầu câu -> nhiều khả năng là danh
+// từ riêng (tên người, địa danh...). Bỏ qua vị trí đầu câu vì tiếng Việt
+// luôn viết hoa chữ đầu câu bất kể đó có phải tên riêng hay không.
+function looksLikeProperNoun(rawWord, isFirst) {
+  return !isFirst && /^\p{Lu}/u.test(rawWord ?? "");
+}
+
 export function escapeRegExp(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
@@ -104,13 +117,20 @@ export function buildIndex(rows, direction) {
  * - Gõ CÓ dấu và khớp đúng  → chỉ lấy mục đó ("gà" không kéo theo "ga").
  * - Gõ KHÔNG dấu           → lấy mọi biến thể ("ga" → ga, gà, gả…), mục khớp đúng lên trước.
  * - Gõ có dấu nhưng sai     → lấy các biến thể cùng dạng không dấu.
+ * - opts.strict: khi nghi ngờ đây là danh từ riêng (viết hoa giữa câu),
+ *   KHÔNG rơi về các biến thể cùng dạng bỏ dấu nếu không có khớp đúng dấu —
+ *   tránh đoán nhầm tên riêng thành một từ thường trùng dạng bỏ dấu
+ *   (ví dụ "Minh" bị đoán thành "mình").
  */
-export function lookup(index, cand) {
+export function lookup(index, cand, opts = {}) {
+  const strict = !!opts.strict;
   const variants = index.byFold.get(fold(cand)) ?? [];
   if (variants.length === 0) return [];
   const exact = index.map.get(cand);
   if (exact && fold(cand) !== cand) return [exact];
-  return exact ? [exact, ...variants.filter((v) => v !== exact)] : variants;
+  if (exact) return [exact, ...variants.filter((v) => v !== exact)];
+  if (strict) return [];
+  return variants;
 }
 
 /* ---------- Chấm điểm ---------- */
@@ -206,15 +226,18 @@ export function suggest(index, token, limit = 3) {
 /**
  * "con heo": thử "con heo" → nếu không có thì thử "con", rồi "heo".
  * Mỗi đoạn: { text, entries, len, start }. entries rỗng = không tra được.
+ * `properFlags[i]` = true nếu từ ở vị trí i (trong `words`, đã chuẩn hoá)
+ * nghi là danh từ riêng — chỉ áp dụng strict khi thử khớp ĐÚNG một mình nó.
  */
-export function segment(words, index) {
+export function segment(words, index, properFlags = []) {
   const segs = [];
   let i = 0;
   while (i < words.length) {
     let hit = null;
     for (let len = Math.min(index.maxLen, words.length - i); len >= 1; len--) {
       const text = words.slice(i, i + len).join(" ");
-      const entries = lookup(index, text);
+      const strict = len === 1 && !!properFlags[i];
+      const entries = lookup(index, text, { strict });
       if (entries.length > 0) {
         hit = { text, entries, len, start: i };
         break;
@@ -238,6 +261,12 @@ export function analyze(index, query, direction) {
   if (words.length === 0) {
     return { words, phrase: "", terms: [], results: [], segments: [], draft: "" };
   }
+
+  // Từ gốc còn giữ hoa/thường, dùng để nhận diện danh từ riêng trước khi
+  // normalize() làm mất thông tin đó. Vị trí i=0 (đầu câu) luôn bị loại vì
+  // tiếng Việt viết hoa đầu câu không kể có phải tên riêng hay không.
+  const rawWords = splitRawWords(query);
+  const properFlags = words.map((_, i) => looksLikeProperNoun(rawWords[i], i === 0));
 
   const phrase = words.join(" ");
   const fphrase = fold(phrase);
@@ -268,7 +297,7 @@ export function analyze(index, query, direction) {
   const results = scored.slice(0, 60).map((x) => x.g);
 
   // Dịch từng từ
-  const raw = segment(words, index);
+  const raw = segment(words, index, properFlags);
   const hasContent = raw.some((s) => !isLoose(s.text));
   const segments = raw.map((s) => ({
     ...s,
