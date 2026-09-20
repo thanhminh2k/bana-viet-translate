@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import { ArrowLeftRight, Search, BookOpenText } from "lucide-react";
 import DICT_RAW from "../bana_viet_dict.json";
 
@@ -37,19 +37,71 @@ function normalize(s) {
   return (s || "").toLowerCase().trim();
 }
 
-function Highlighted({ text, query }) {
-  if (!query) return <>{text}</>;
-  const lower = text.toLowerCase();
-  const q = query.toLowerCase();
-  const idx = lower.indexOf(q);
-  if (idx === -1) return <>{text}</>;
+// Tách câu nhập thành các từ riêng lẻ (bỏ khoảng trắng thừa và dấu câu),
+// đồng thời loại bỏ từ trùng lặp.
+function tokenize(s) {
+  const parts = normalize(s)
+    .split(/[\s,;.!?:()"“”/\\|]+/)
+    .filter(Boolean);
+  return [...new Set(parts)];
+}
+
+function escapeRegExp(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * Chấm điểm một mục từ so với câu tìm kiếm.
+ * - Khớp nguyên cụm (cả câu) được điểm cao nhất, để các từ ghép như
+ *   "cây lúa" vẫn lên đầu khi người dùng gõ đúng cụm.
+ * - Sau đó tới từng từ riêng lẻ: khớp nguyên từ > bắt đầu bằng > chứa.
+ * - Mục nào khớp nhiều từ trong câu hơn thì điểm càng cao.
+ */
+function scoreEntry(key, words, phrase, tokens) {
+  let score = 0;
+
+  if (key === phrase) score += 1000;
+  else if (key.startsWith(phrase)) score += 800;
+  else if (key.includes(phrase)) score += 600;
+
+  let matched = 0;
+  for (const t of tokens) {
+    let best = 0;
+    for (const w of words) {
+      if (w === t) {
+        best = 100;
+        break;
+      }
+      // Từ 1 ký tự chỉ được khớp nguyên từ, tránh ra quá nhiều kết quả nhiễu
+      if (t.length >= 2) {
+        if (w.startsWith(t)) best = Math.max(best, 60);
+        else if (w.includes(t)) best = Math.max(best, 30);
+      }
+    }
+    if (best > 0) {
+      matched++;
+      score += best;
+    }
+  }
+  return score + matched * 20;
+}
+
+// Tô sáng tất cả các từ khoá (cả cụm lẫn từng từ) trong văn bản
+function Highlighted({ text, terms }) {
+  if (!terms || terms.length === 0) return <>{text}</>;
+  const pattern = terms.map(escapeRegExp).join("|");
+  const parts = text.split(new RegExp(`(${pattern})`, "gi"));
   return (
     <>
-      {text.slice(0, idx)}
-      <mark className="bg-amber-300 text-stone-900 rounded px-0.5">
-        {text.slice(idx, idx + q.length)}
-      </mark>
-      {text.slice(idx + q.length)}
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <mark key={i} className="bg-amber-300 text-stone-900 rounded px-0.5">
+            {part}
+          </mark>
+        ) : (
+          <Fragment key={i}>{part}</Fragment>
+        )
+      )}
     </>
   );
 }
@@ -72,7 +124,7 @@ export default function BahnarDictionary() {
       const key = normalize(src);
       if (!key) continue;
       if (!map.has(key)) {
-        map.set(key, { display: src, meanings: [], examples: [] });
+        map.set(key, { display: src, words: key.split(/\s+/), meanings: [], examples: [] });
       }
       const g = map.get(key);
       if (!g.meanings.includes(tgt)) g.meanings.push(tgt);
@@ -87,27 +139,40 @@ export default function BahnarDictionary() {
     return s.size;
   }, []);
 
+  // Tách câu nhập thành cụm đầy đủ + từng từ riêng lẻ
+  const { phrase, tokens, terms } = useMemo(() => {
+    const phrase = normalize(query).replace(/\s+/g, " ");
+    const tokens = tokenize(query);
+    const terms = [
+      ...new Set([phrase, ...tokens.filter((t) => t.length >= 2)]),
+    ]
+      .filter(Boolean)
+      .sort((a, b) => b.length - a.length); // ưu tiên khớp cụm dài trước khi tô sáng
+    return { phrase, tokens, terms };
+  }, [query]);
+
   const results = useMemo(() => {
-    const q = normalize(query);
-    if (!q) return [];
-    const starts = [];
-    const includes = [];
+    if (tokens.length === 0) return [];
+    const scored = [];
     for (const [key, g] of grouped) {
-      if (key.startsWith(q)) starts.push({ key, ...g });
-      else if (key.includes(q)) includes.push({ key, ...g });
+      const score = scoreEntry(key, g.words, phrase, tokens);
+      if (score > 0) scored.push({ key, score, ...g });
     }
-    const byLenThenAlpha = (a, b) => a.key.length - b.key.length || a.key.localeCompare(b.key);
-    starts.sort(byLenThenAlpha);
-    includes.sort(byLenThenAlpha);
-    return [...starts, ...includes].slice(0, 60);
-  }, [query, grouped]);
+    scored.sort(
+      (a, b) =>
+        b.score - a.score ||
+        a.key.length - b.key.length ||
+        a.key.localeCompare(b.key)
+    );
+    return scored.slice(0, 60);
+  }, [phrase, tokens, grouped]);
 
   const srcLabel = direction === "bv" ? "Tiếng Bahnar" : "Tiếng Việt";
   const tgtLabel = direction === "bv" ? "Tiếng Việt" : "Tiếng Bahnar";
   const placeholder =
     direction === "bv"
-      ? "Nhập từ Bahnar, ví dụ: akap, ake, along…"
-      : "Nhập từ tiếng Việt, ví dụ: bẫy, sừng, cây lúa…";
+      ? "Nhập từ hoặc cả câu Bahnar, ví dụ: akap, ake along…"
+      : "Nhập từ hoặc cả câu tiếng Việt, ví dụ: bẫy, sừng, cây lúa…";
 
   function swap() {
     setDirection((d) => (d === "bv" ? "vb" : "bv"));
@@ -184,7 +249,7 @@ export default function BahnarDictionary() {
             {results.length === 0 ? (
               <div className="text-sm text-stone-400 leading-relaxed">
                 {query.trim()
-                  ? "Không tìm thấy từ phù hợp trong từ điển."
+                  ? "Không tìm thấy từ nào phù hợp trong từ điển."
                   : "Kết quả tra cứu sẽ hiện ở đây."}
               </div>
             ) : (
@@ -197,7 +262,7 @@ export default function BahnarDictionary() {
                       className={`rounded-xl border border-stone-100 bg-white p-3 border-l-4 ${ACCENT_BORDERS[accent]}`}
                     >
                       <div className="text-lg font-semibold text-stone-800" style={FONT_SERIF}>
-                        <Highlighted text={r.display} query={query} />
+                        <Highlighted text={r.display} terms={terms} />
                       </div>
                       <ul className={`mt-1.5 pl-4 list-disc text-[15px] leading-relaxed text-stone-700 ${ACCENT_MARKERS[accent]}`}>
                         {r.meanings.map((m, j) => (
@@ -218,7 +283,7 @@ export default function BahnarDictionary() {
         </div>
 
         <div className="text-center mt-6 text-xs text-stone-400">
-          Tra cứu theo từ · gõ để tìm các từ bắt đầu hoặc chứa nội dung bạn nhập
+          Nhập một từ hoặc cả câu · hệ thống tự tách từng từ để tra cứu
         </div>
       </div>
     </div>
