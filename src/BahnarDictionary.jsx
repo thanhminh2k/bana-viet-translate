@@ -322,7 +322,7 @@ function Breakdown({ analysis, onReplace, copied, onCopy }) {
         <>
           <div className="mt-2.5 flex items-start justify-between gap-2">
             <div className="text-sm text-stone-700">
-              <span className="text-stone-400">Bản ghép từng từ: </span>
+              <span className="text-stone-400">Tạm dịch: </span>
               <span className="font-semibold" style={FONT_SERIF}>
                 {draft}
               </span>
@@ -337,7 +337,7 @@ function Breakdown({ analysis, onReplace, copied, onCopy }) {
             </button>
           </div>
           <div className="mt-1 text-[11px] leading-snug text-stone-400">
-            Chỉ ghép theo từng từ, ngữ pháp Bahnar có thể khác. Hãy đối chiếu với các mục bên dưới.
+            Ngữ pháp Bahnar có thể khác so với bản dịch.
           </div>
         </>
       )}

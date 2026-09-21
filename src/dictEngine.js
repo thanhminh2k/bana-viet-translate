@@ -140,7 +140,19 @@ export function lookup(index, cand, opts = {}) {
  * Khớp nguyên cụm > từng từ (nguyên từ > bắt đầu bằng > chứa).
  * Mục khớp đủ mọi từ khoá được cộng thêm.
  */
-export function scoreEntry(g, fphrase, ftokens) {
+/**
+ * tokensRaw (tuỳ chọn): dạng CÓ dấu thật của từng phần tử trong `ftokens`,
+ * cùng thứ tự. Dùng để biết người dùng có thực sự gõ dấu hay không:
+ *  - Nếu từ người dùng gõ vốn KHÔNG dấu (vd gõ "toi"), việc so khớp trên
+ *    dạng bỏ dấu là đúng ý — giữ nguyên hành vi "tra không dấu" như cũ.
+ *  - Nếu từ người dùng gõ CÓ dấu (vd gõ "tôi", "là"), thì so khớp bằng
+ *    dạng bỏ dấu sẽ gây nhầm với những từ khác dấu nhưng cùng phụ âm/nguyên
+ *    âm gốc (vd "tôi" trùng "tới", "là" trùng "lăng") — trường hợp này bắt
+ *    buộc phải so khớp trên dạng CÓ dấu thật, không rơi về dạng bỏ dấu nữa.
+ * Không truyền tokensRaw (như suggest() gọi để bắt lỗi chính tả) thì giữ
+ * nguyên hành vi khoan dung cũ.
+ */
+export function scoreEntry(g, fphrase, ftokens, tokensRaw = null) {
   if (!fphrase) return 0;
   let score = 0;
   if (g.fkey === fphrase) score += 1000;
@@ -148,17 +160,33 @@ export function scoreEntry(g, fphrase, ftokens) {
   else if (g.fkey.includes(fphrase)) score += 600;
 
   let matched = 0;
-  for (const t of ftokens) {
+  for (let ti = 0; ti < ftokens.length; ti++) {
+    const t = ftokens[ti];
+    const raw = tokensRaw ? tokensRaw[ti] : null;
+    const tIsPlain = raw == null || fold(raw) === raw;
     let best = 0;
-    for (const w of g.fwords) {
+    for (let wi = 0; wi < g.fwords.length; wi++) {
+      const w = g.fwords[wi];
       if (w === t) {
-        best = 100;
-        break;
+        if (tIsPlain || g.words[wi] === raw) {
+          best = 100;
+          break;
+        }
+        // Trùng dạng bỏ dấu nhưng khác dấu thực (vd "tôi" ↔ "tới") — không
+        // tính điểm cho trường hợp này nữa, tránh nhiễu kết quả.
+        continue;
       }
       // Từ 1 ký tự chỉ được khớp nguyên từ, tránh ra quá nhiều kết quả nhiễu
       if (t.length >= 2) {
-        if (w.startsWith(t)) best = Math.max(best, 60);
-        else if (w.includes(t)) best = Math.max(best, 30);
+        if (tIsPlain) {
+          if (w.startsWith(t)) best = Math.max(best, 60);
+          else if (w.includes(t)) best = Math.max(best, 30);
+        } else if (raw.length >= 2) {
+          // Có dấu: chỉ so khớp tiền tố/chứa trên dạng CÓ dấu thật.
+          const rw = g.words[wi];
+          if (rw.startsWith(raw)) best = Math.max(best, 60);
+          else if (rw.includes(raw)) best = Math.max(best, 30);
+        }
       }
     }
     if (best > 0) {
@@ -278,7 +306,18 @@ export function analyze(index, query, direction) {
 
   const uniq = [...new Set(words)];
   const content = uniq.filter((w) => !isLoose(w));
-  const ftokens = [...new Set((content.length > 0 ? content : uniq).map(fold))];
+  const srcTokens = content.length > 0 ? content : uniq;
+
+  // Giữ cặp (dạng bỏ dấu → dạng có dấu thật người dùng đã gõ) để
+  // scoreEntry() biết có nên rơi về so khớp bỏ dấu hay không (xem
+  // scoreEntry() ở trên).
+  const tokenSeen = new Map();
+  for (const w of srcTokens) {
+    const f = fold(w);
+    if (!tokenSeen.has(f)) tokenSeen.set(f, w);
+  }
+  const ftokens = [...tokenSeen.keys()];
+  const tokensRaw = [...tokenSeen.values()];
 
   const terms = [...new Set([fphrase, ...ftokens.filter((t) => t.length >= 2)])]
     .filter(Boolean)
@@ -287,14 +326,20 @@ export function analyze(index, query, direction) {
   // Danh sách mục từ liên quan
   const scored = [];
   for (const g of index.map.values()) {
-    let s = scoreEntry(g, fphrase, ftokens);
+    let s = scoreEntry(g, fphrase, ftokens, tokensRaw);
     if (s > 0) {
       if (g.key === phrase) s += 200; // khớp cả dấu thì hơn khớp không dấu
       scored.push({ g, s });
     }
   }
   scored.sort((a, b) => b.s - a.s || a.g.key.length - b.g.key.length || a.g.key.localeCompare(b.g.key));
-  const results = scored.slice(0, 60).map((x) => x.g);
+
+  // Chỉ hiển thị các mục "sát" mục khớp tốt nhất — bỏ bớt đuôi dài các gợi ý
+  // yếu, không còn liên quan trực tiếp đến câu tra.
+  const RESULT_RELATIVE_THRESHOLD = 0.9;
+  const topScore = scored.length > 0 ? scored[0].s : 0;
+  const relevant = topScore > 0 ? scored.filter((x) => x.s >= topScore * RESULT_RELATIVE_THRESHOLD) : scored;
+  const results = relevant.slice(0, 60).map((x) => x.g);
 
   // Dịch từng từ
   const raw = segment(words, index, properFlags);
