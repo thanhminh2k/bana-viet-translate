@@ -16,6 +16,8 @@ import {
   X,
 } from "lucide-react";
 import DICT_RAW from "../bana_viet_dict.json";
+// Đổi lại tên file bên dưới cho khớp với ảnh logo bạn đã đặt trong src/assets
+import div2Logo from "./assets/f2.jpg";
 import {
   analyze,
   buildIndex,
@@ -859,6 +861,27 @@ export default function BahnarDictionary() {
       <style>{FONT_IMPORT_CSS}</style>
 
       <div className="mx-auto max-w-5xl">
+        {/* ---------- TRANG BÌA ---------- */}
+        <div className="mb-8 overflow-hidden rounded-3xl border-2 border-amber-100 bg-white shadow-sm shadow-amber-100">
+          {/* Tiêu đề đơn vị (letterhead) */}
+          <div className="flex items-center gap-3 sm:gap-4 border-b border-amber-100 px-4 py-3 sm:px-6 sm:py-4">
+            <img
+              src={div2Logo}
+              alt="Phù hiệu Sư đoàn Bộ binh 2, Quân khu 5"
+              className="h-14 w-14 sm:h-16 sm:w-16 shrink-0 rounded-full object-contain"
+            />
+            <div className="text-left leading-tight">
+              <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-wide text-rose-600">
+                Sư đoàn Bộ binh 2 · Quân khu 5
+              </p>
+              <p className="text-sm sm:text-base font-semibold text-stone-700">Tiểu đoàn SPG-9</p>
+              <p className="text-[11px] sm:text-xs text-stone-400">
+                Sản phẩm tham gia Phong trào thi đua Chuyển đổi số
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* ---------- HEADER ---------- */}
         <div className="flex flex-col items-center text-center gap-2">
           <span className="flex items-center gap-2 text-teal-600">
