@@ -883,16 +883,13 @@ export default function BahnarDictionary() {
         </div>
 
         {/* ---------- HEADER ---------- */}
-        <div className="flex flex-col items-center text-center gap-2">
-          <span className="flex items-center gap-2 text-teal-600">
-            <BookOpenText size={22} />
-          </span>
+        <div className="flex flex-col items-center text-center">
           <h1 className="text-3xl sm:text-4xl font-semibold text-stone-800" style={FONT_SERIF}>
             <span className="text-rose-500">Bahnar</span>
             <span className="text-amber-400 mx-2">·</span>
             <span className="text-teal-600">Việt</span>
           </h1>
-          <p className="text-sm sm:text-base text-stone-500">Từ điển đối chiếu Bahnar – Tiếng Việt</p>
+          <p className="text-sm sm:text-base text-stone-500">Từ điển đối chiếu Bahnar - Tiếng Việt</p>
         </div>
 
         {/* dải hoa văn thổ cẩm */}

@@ -48,6 +48,21 @@ export function splitWords(s) {
   return normalize(s).split(SEPARATORS).filter(Boolean);
 }
 
+// Tách một đoạn nhập thành nhiều CÂU theo dấu chấm ".", để mỗi câu được
+// tra/ghép/chấm điểm độc lập — tránh việc "Tôi đi học. Bạn đi làm." bị
+// gộp thành một chuỗi từ duy nhất (splitWords() coi "." là separator nên
+// không giữ được ranh giới câu).
+// Chỉ tách theo "." ở bước này; "?" và "!" vẫn được splitWords() coi như
+// separator bên trong câu như trước — có thể mở rộng sau mà không đổi
+// kiến trúc (xem analyzeSentence()/analyze() bên dưới).
+export function splitSentences(s) {
+  return String(s ?? "")
+    .normalize("NFC")
+    .split(/\.+/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
 // Như splitWords nhưng GIỮ NGUYÊN hoa/thường — dùng để nhận diện danh từ
 // riêng (viết hoa) trước khi normalize() làm mất thông tin đó.
 function splitRawWords(s) {
@@ -152,12 +167,30 @@ export function lookup(index, cand, opts = {}) {
  * Không truyền tokensRaw (như suggest() gọi để bắt lỗi chính tả) thì giữ
  * nguyên hành vi khoan dung cũ.
  */
-export function scoreEntry(g, fphrase, ftokens, tokensRaw = null) {
+/**
+ * Chấm điểm theo TẦNG rõ ràng, mỗi tầng cách nhau đủ xa để không bao giờ bị
+ * lẫn bởi điểm cộng dồn của phần khớp từng từ bên dưới:
+ *
+ *   1. Khớp chính xác CÓ dấu   (g.key === phrase)        → 100000
+ *   2. Khớp chính xác KHÔNG dấu (g.fkey === fphrase)      →  80000
+ *   3. Bắt đầu bằng cụm (không dấu)                        →  60000
+ *   4. Chứa cụm (không dấu)                                →  40000
+ *
+ * Nhờ vậy "chào" (tầng 1) luôn đứng trước "cháo" (tầng 2) khi người dùng gõ
+ * đúng dấu "chào"; còn gõ không dấu "chao" thì cả hai cùng tầng 2 và được
+ * xếp tiếp theo các tiêu chí phụ (độ dài, alphabet) như cũ.
+ *
+ * `phrase` (có dấu, đã normalize) là tuỳ chọn — suggest() không truyền vì
+ * nó vốn đã làm việc trên dạng bỏ dấu (bắt lỗi chính tả), lúc đó tầng 1/2
+ * gộp làm một như hành vi cũ.
+ */
+export function scoreEntry(g, fphrase, ftokens, tokensRaw = null, phrase = null) {
   if (!fphrase) return 0;
   let score = 0;
-  if (g.fkey === fphrase) score += 1000;
-  else if (g.fkey.startsWith(fphrase)) score += 800;
-  else if (g.fkey.includes(fphrase)) score += 600;
+  if (phrase != null && g.key === phrase) score += 100000;
+  else if (g.fkey === fphrase) score += 80000;
+  else if (g.fkey.startsWith(fphrase)) score += 60000;
+  else if (g.fkey.includes(fphrase)) score += 40000;
 
   let matched = 0;
   for (let ti = 0; ti < ftokens.length; ti++) {
@@ -282,12 +315,16 @@ export function segment(words, index, properFlags = []) {
   return segs;
 }
 
-/* ---------- Phân tích trọn vẹn một câu tra ---------- */
+/* ---------- Phân tích trọn vẹn MỘT câu tra ---------- */
 
-export function analyze(index, query, direction) {
+// Toàn bộ logic phân tích cũ của analyze(), thu hẹp lại thành một câu
+// (query ở đây được đảm bảo không còn chứa "." nhờ splitSentences() gọi
+// từ analyze() bên dưới). Không tự gọi splitSentences() ở đây để có thể
+// dùng lại analyzeSentence() độc lập khi cần (ví dụ test).
+export function analyzeSentence(index, query, direction) {
   const words = splitWords(query);
   if (words.length === 0) {
-    return { words, phrase: "", terms: [], results: [], segments: [], draft: "" };
+    return { text: query, words, phrase: "", terms: [], results: [], segments: [], draft: "" };
   }
 
   // Từ gốc còn giữ hoa/thường, dùng để nhận diện danh từ riêng trước khi
@@ -326,11 +363,8 @@ export function analyze(index, query, direction) {
   // Danh sách mục từ liên quan
   const scored = [];
   for (const g of index.map.values()) {
-    let s = scoreEntry(g, fphrase, ftokens, tokensRaw);
-    if (s > 0) {
-      if (g.key === phrase) s += 200; // khớp cả dấu thì hơn khớp không dấu
-      scored.push({ g, s });
-    }
+    const s = scoreEntry(g, fphrase, ftokens, tokensRaw, phrase);
+    if (s > 0) scored.push({ g, s });
   }
   scored.sort((a, b) => b.s - a.s || a.g.key.length - b.g.key.length || a.g.key.localeCompare(b.g.key));
 
@@ -354,7 +388,45 @@ export function analyze(index, query, direction) {
     .map((s) => (s.entries.length > 0 ? s.entries[0].meanings[0] : `[${s.text}]`))
     .join(" ");
 
-  return { words, phrase, terms, results, segments, draft };
+  return { text: query, words, phrase, terms, results, segments, draft };
+}
+
+/**
+ * Bộ điều phối: tách `query` thành nhiều CÂU (theo dấu ".") rồi phân tích
+ * riêng từng câu bằng analyzeSentence(), để kết quả tra/ghép/ranking của
+ * câu này không bị trộn với câu kia (xem lỗi mô tả ở đầu file).
+ *
+ * `sentences` là dữ liệu chính, nên dùng cho UI mới (mỗi câu một khối).
+ * Các field phẳng (words/phrase/terms/results/segments/draft) được GIỮ LẠI
+ * chỉ để tương thích ngược với UI hiện tại (đang đọc analysis.results,
+ * analysis.segments... như một câu duy nhất) — sẽ bỏ dần khi UI chuyển
+ * sang render theo `sentences`. Lưu ý: `segments[].start` là chỉ số TRONG
+ * từng câu, không phải chỉ số toàn cục trong `words` đã gộp — replaceWord()
+ * ở UI cần được sửa để nhận thêm sentenceIndex trước khi dựa vào field này
+ * cho câu nhiều-hơn-một-mệnh-đề.
+ */
+export function analyze(index, query, direction) {
+  const sentences = splitSentences(query);
+  if (sentences.length === 0) {
+    return { sentences: [], words: [], phrase: "", terms: [], results: [], segments: [], draft: "" };
+  }
+
+  const sentenceAnalyses = sentences.map((sentence) => analyzeSentence(index, sentence, direction));
+
+  return {
+    sentences: sentenceAnalyses,
+
+    // ---- Field phẳng để tương thích ngược (tạm thời) ----
+    words: sentenceAnalyses.flatMap((s) => s.words),
+    phrase: sentenceAnalyses.map((s) => s.phrase).join(". "),
+    terms: [...new Set(sentenceAnalyses.flatMap((s) => s.terms))],
+    results: sentenceAnalyses.flatMap((s) => s.results),
+    segments: sentenceAnalyses.flatMap((s) => s.segments),
+    draft: sentenceAnalyses
+      .map((s) => s.draft)
+      .filter(Boolean)
+      .join(". "),
+  };
 }
 
 /* ---------- Tô sáng ---------- */
