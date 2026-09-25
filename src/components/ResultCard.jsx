@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
-import { ACCENT_BORDERS, ACCENT_MARKERS, FONT_SERIF } from "../constants";
 import { Highlighted } from "./Highlighted";
+import { ACCENT_BORDERS, ACCENT_MARKERS, FONT_SERIF } from "../constants";
 
 export function ResultCard({ g, accent, terms, saved, onToggle, tag, onOpen }) {
   return (
@@ -33,7 +33,10 @@ export function ResultCard({ g, accent, terms, saved, onToggle, tag, onOpen }) {
         </div>
       ))}
       {onOpen && (
-        <button onClick={onOpen} className="mt-2 text-xs font-semibold text-teal-600 hover:text-teal-700">
+        <button
+          onClick={onOpen}
+          className="mt-2 text-xs font-semibold text-teal-600 hover:text-teal-700"
+        >
           Tra cứu lại
         </button>
       )}

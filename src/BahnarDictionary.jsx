@@ -19,6 +19,8 @@ import { analyze, buildIndex, normalize, wordOfTheDay } from "./dictEngine";
 import { useStoredState } from "./hooks/useStoredState";
 import { freshDaily, todayKey } from "./srs";
 
+import backgroundImage from "./assets/background.jpg";
+
 export default function BahnarDictionary() {
   const [mode, setMode] = useState("lookup");
   const [direction, setDirection] = useState("vb");
@@ -127,13 +129,16 @@ export default function BahnarDictionary() {
 
   return (
     <div
-      className="min-h-screen w-full bg-gradient-to-br from-amber-50 via-orange-50 to-teal-50 px-4 py-8 sm:px-6 sm:py-10"
-      style={FONT_SANS}
+  className="min-h-screen w-full bg-cover bg-center bg-fixed bg-no-repeat px-4 py-8 sm:px-6 sm:py-10"
+  style={{
+    ...FONT_SANS,
+    backgroundImage: `url(${backgroundImage})`,
+  }}
     >
       <style>{FONT_IMPORT_CSS}</style>
 
-      <div className="mx-auto max-w-5xl">
         <Letterhead />
+      <div className="mx-auto max-w-5xl">
         <AppHeader />
         <ModeTabs mode={mode} onChange={setMode} favoriteCount={favorites.length} />
 
