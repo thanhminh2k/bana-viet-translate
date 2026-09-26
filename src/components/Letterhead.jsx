@@ -1,3 +1,5 @@
+import ahllvtLogo from "../assets/ahllvtnd.jpg";
+
 export function Letterhead() {
   return (
     <div className="w-full text-center px-2 pt-2 pb-1 mb-3">
@@ -10,9 +12,16 @@ export function Letterhead() {
       </h3>
 
       <div className="my-1 flex items-center justify-center gap-2">
-        <div className="h-[1px] w-8 sm:w-16 bg-red-700/60" />
-        <span className="text-red-700 text-xs sm:text-sm">★</span>
-        <div className="h-[1px] w-8 sm:w-16 bg-red-700/60" />
+        <img
+          src={ahllvtLogo}
+          alt="AHLLVT"
+          className="h-16 w-auto max-w-[240px] object-contain"
+        />
+        <img
+          src={ahllvtLogo}
+          alt="AHLLVT"
+          className="h-16 w-auto max-w-[240px] object-contain"
+        />
       </div>
 
       <p className="text-xs sm:text-sm md:text-base font-semibold text-red-800 leading-snug">
