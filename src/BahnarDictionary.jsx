@@ -20,6 +20,9 @@ import { useStoredState } from "./hooks/useStoredState";
 import { freshDaily, todayKey } from "./srs";
 
 import backgroundImage from "./assets/background.jpg";
+import qk5Logo from "./assets/qk5.jpg";
+import div2Logo from "./assets/f2.jpg";
+import qrImage from "./assets/qr.png"; // TODO: đổi lại đúng tên/đường dẫn file QR của bạn
 
 export default function BahnarDictionary() {
   const [mode, setMode] = useState("lookup");
@@ -139,8 +142,22 @@ export default function BahnarDictionary() {
     >
       <style>{FONT_IMPORT_CSS}</style>
 
+      <div className="mx-auto flex w-full max-w-[1700px] items-stretch gap-4 lg:gap-8">
+        <div className="hidden lg:flex flex-1 min-w-0 flex-col items-center mt-5 gap-24">
+          <img
+            src={qk5Logo}
+            alt="Logo Quân khu 5"
+            className="h-auto w-full max-w-[240px] object-contain"
+          />
+          <img
+            src={qrImage}
+            alt="Mã QR"
+            className="h-auto w-2/3 max-w-[240px] object-contain"
+          />
+        </div>
+
+        <div className="mx-auto w-full max-w-5xl shrink-0">
         <Letterhead />
-      <div className="mx-auto max-w-5xl">
         <AppHeader />
         <ModeTabs mode={mode} onChange={setMode} favoriteCount={favorites.length} />
 
@@ -195,6 +212,16 @@ export default function BahnarDictionary() {
 
         <div className="text-center mt-6 text-xs text-stone-400">
           Nhập một từ hoặc cả câu · ưu tiên khớp cụm dài nhất, rồi tự tách từng từ để tra cứu
+        </div>
+        </div>
+
+        {/* Logo Sư đoàn 2 — cột bên phải, căn giữa theo chiều cao nội dung */}
+        <div className="hidden lg:flex flex-1 min-w-0 items-start mt-5">
+          <img
+            src={div2Logo}
+            alt="Logo Sư đoàn 2"
+            className="h-auto w-full max-w-[240px] object-contain"
+          />
         </div>
       </div>
     </div>
