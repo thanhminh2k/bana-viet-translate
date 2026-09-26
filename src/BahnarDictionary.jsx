@@ -32,6 +32,8 @@ export default function BahnarDictionary() {
   const [daily, setDaily] = useStoredState(SRS_DAILY_KEY, freshDaily());
   const [srsSettings, setSrsSettings] = useStoredState(SRS_SETTINGS_KEY, DEFAULT_SRS_SETTINGS);
 
+
+  // http://tracuutiengbahnar.io.vn/
   useEffect(() => {
     if (daily.date !== todayKey()) setDaily(freshDaily());
   }, [daily.date, setDaily]);
@@ -129,7 +131,7 @@ export default function BahnarDictionary() {
 
   return (
     <div
-  className="min-h-screen w-full bg-cover bg-center bg-fixed bg-no-repeat px-4 py-8 sm:px-6 sm:py-10"
+  className="min-h-screen w-full bg-cover bg-center bg-fixed bg-no-repeat px-4 sm:px-6 sm:py-2"
   style={{
     ...FONT_SANS,
     backgroundImage: `url(${backgroundImage})`,
