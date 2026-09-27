@@ -152,7 +152,7 @@ export default function BahnarDictionary() {
           <img
             src={qrImage}
             alt="Mã QR"
-            className="h-auto w-2/3 max-w-[240px] object-contain"
+            className="h-auto w-4/5 max-w-[240px] object-contain"
           />
         </div>
 
@@ -210,9 +210,6 @@ export default function BahnarDictionary() {
           <SavedWordbook savedEntries={savedEntries} toggleFavorite={toggleFavorite} openEntry={openEntry} />
         )}
 
-        <div className="text-center mt-6 text-xs text-stone-400">
-          Nhập một từ hoặc cả câu · ưu tiên khớp cụm dài nhất, rồi tự tách từng từ để tra cứu
-        </div>
         </div>
 
         {/* Logo Sư đoàn 2 — cột bên phải, căn giữa theo chiều cao nội dung */}
