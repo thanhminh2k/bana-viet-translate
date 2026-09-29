@@ -129,8 +129,8 @@ export default function BahnarDictionary() {
   const tgtLabel = direction === "bv" ? "Tiếng Việt" : "Tiếng Bahnar";
   const placeholder =
     direction === "bv"
-      ? "Nhập từ hoặc cả câu Bahnar, ví dụ: akap, ake along…"
-      : "Nhập từ hoặc cả câu tiếng Việt, ví dụ: bẫy, sừng, con heo… (gõ không dấu cũng được)";
+      ? "Nhập từ hoặc cả câu Bahnar"
+      : "Nhập từ hoặc cả câu tiếng Việt";
 
   return (
     <div
@@ -143,7 +143,7 @@ export default function BahnarDictionary() {
       <style>{FONT_IMPORT_CSS}</style>
 
       <div className="mx-auto flex w-full max-w-[1700px] items-stretch gap-4 lg:gap-8">
-        <div className="hidden lg:flex flex-1 min-w-0 flex-col items-center mt-5 gap-24">
+        <div className="hidden 2xl:flex flex-1 min-w-0 flex-col items-center mt-5 gap-24">
           <img
             src={qk5Logo}
             alt="Logo Quân khu 5"
@@ -213,7 +213,7 @@ export default function BahnarDictionary() {
         </div>
 
         {/* Logo Sư đoàn 2 — cột bên phải, căn giữa theo chiều cao nội dung */}
-        <div className="hidden lg:flex flex-1 min-w-0 items-start mt-5">
+        <div className="hidden 2xl:flex flex-1 min-w-0 items-start mt-5">
           <img
             src={div2Logo}
             alt="Logo Sư đoàn 2"

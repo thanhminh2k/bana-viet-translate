@@ -114,14 +114,13 @@ function ResultPanel({
       {!query.trim() ? (
         <div className="flex flex-col gap-3">
           <div className="text-sm leading-relaxed text-stone-400">
-            Kết quả tra cứu sẽ hiện ở đây. Gõ không dấu hoặc sai chính tả nhẹ vẫn tìm được.
+            Kết quả tra cứu sẽ hiện ở đây
           </div>
           <WordOfTheDay wod={wod} onOpen={onQueryChange} />
         </div>
       ) : !hasAnything ? (
         <div className="text-sm leading-relaxed text-stone-400">
-          Không tìm thấy từ nào phù hợp trong từ điển. Thử gõ ngắn hơn, gõ không dấu hoặc kiểm tra lại
-          chính tả.
+          Không tìm thấy từ phù hợp trong từ điển
         </div>
       ) : (
         <div className="flex flex-col gap-2.5 overflow-y-auto max-h-80 sm:max-h-[28rem] pr-1">
