@@ -1,6 +1,7 @@
 import { ArrowLeftRight, BookOpenText, History, Search, Sparkles, X } from "lucide-react";
 import { DIR_LABEL, FONT_SERIF } from "../constants";
 import { Breakdown } from "./Breakdown";
+import { AiTranslation } from "./AiTranslation";
 import { ResultCard } from "./ResultCard";
 
 function SourcePanel({
@@ -118,26 +119,31 @@ function ResultPanel({
           </div>
           <WordOfTheDay wod={wod} onOpen={onQueryChange} />
         </div>
-      ) : !hasAnything ? (
-        <div className="text-sm leading-relaxed text-stone-400">
-          Không tìm thấy từ phù hợp trong từ điển
-        </div>
       ) : (
-        <div className="flex flex-col gap-2.5 overflow-y-auto max-h-80 sm:max-h-[28rem] pr-1">
-          {showBreakdown && (
-            <Breakdown analysis={analysis} onReplace={onReplace} copied={copied} onCopy={onCopy} />
+        <>
+          {!hasAnything ? (
+            <div className="text-sm leading-relaxed text-stone-400">
+              Không tìm thấy từ phù hợp trong từ điển
+            </div>
+          ) : (
+            <div className="flex flex-col gap-2.5 overflow-y-auto max-h-80 sm:max-h-[28rem] pr-1">
+              {showBreakdown && (
+                <Breakdown analysis={analysis} onReplace={onReplace} copied={copied} onCopy={onCopy} />
+              )}
+              {results.map((g, i) => (
+                <ResultCard
+                  key={g.key}
+                  g={g}
+                  accent={i % 3}
+                  terms={terms}
+                  saved={favIds.has(`${direction}|${g.key}`)}
+                  onToggle={() => onToggleFavorite(direction, g.key)}
+                />
+              ))}
+            </div>
           )}
-          {results.map((g, i) => (
-            <ResultCard
-              key={g.key}
-              g={g}
-              accent={i % 3}
-              terms={terms}
-              saved={favIds.has(`${direction}|${g.key}`)}
-              onToggle={() => onToggleFavorite(direction, g.key)}
-            />
-          ))}
-        </div>
+          <AiTranslation key={`${direction}|${query.trim()}`} text={query.trim()} direction={direction} />
+        </>
       )}
     </div>
   );
