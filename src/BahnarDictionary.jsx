@@ -1,5 +1,5 @@
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
-import DICT_RAW from "../bana_viet_dict.json";
+import DICT_RAW from "../data_viet_bahnar.json";
 import { AppHeader } from "./components/AppHeader";
 import { Letterhead } from "./components/Letterhead";
 import LookupMode from "./components/LookupMode";
