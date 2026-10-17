@@ -1,8 +1,36 @@
 import { Check, Copy, Languages } from "lucide-react";
 import { FONT_SERIF } from "../constants";
 
-export function Breakdown({ analysis, onReplace, copied, onCopy }) {
-  const { segments, draft, words } = analysis;
+export function Draft({ analysis, copied, onCopy }) {
+  const { draft, words } = analysis;
+  if (words.length <= 1) return null;
+  return (
+    <div className="rounded-xl border border-amber-200 bg-amber-50/70 p-3">
+      <div className="flex items-start justify-between gap-2">
+        <div className="text-sm text-stone-700">
+          <span className="text-stone-400">Tạm dịch: </span>
+          <span className="font-semibold" style={FONT_SERIF}>
+            {draft}
+          </span>
+        </div>
+        <button
+          onClick={onCopy}
+          aria-label="Chép bản ghép"
+          title="Chép bản ghép"
+          className="shrink-0 rounded-md p-1 text-stone-400 hover:bg-white hover:text-teal-600"
+        >
+          {copied ? <Check size={16} className="text-teal-600" /> : <Copy size={16} />}
+        </button>
+      </div>
+      <div className="mt-1 text-[11px] leading-snug text-stone-400">
+        Ngữ pháp Bahnar có thể khác so với bản dịch.
+      </div>
+    </div>
+  );
+}
+
+export function Breakdown({ analysis, onReplace }) {
+  const { segments, words } = analysis;
   const multi = words.length > 1;
   return (
     <div className="rounded-xl border border-amber-200 bg-amber-50/70 p-3">
@@ -62,30 +90,6 @@ export function Breakdown({ analysis, onReplace, copied, onCopy }) {
           );
         })}
       </div>
-
-      {multi && (
-        <>
-          <div className="mt-2.5 flex items-start justify-between gap-2">
-            <div className="text-sm text-stone-700">
-              <span className="text-stone-400">Tạm dịch: </span>
-              <span className="font-semibold" style={FONT_SERIF}>
-                {draft}
-              </span>
-            </div>
-            <button
-              onClick={onCopy}
-              aria-label="Chép bản ghép"
-              title="Chép bản ghép"
-              className="shrink-0 rounded-md p-1 text-stone-400 hover:bg-white hover:text-teal-600"
-            >
-              {copied ? <Check size={16} className="text-teal-600" /> : <Copy size={16} />}
-            </button>
-          </div>
-          <div className="mt-1 text-[11px] leading-snug text-stone-400">
-            Ngữ pháp Bahnar có thể khác so với bản dịch.
-          </div>
-        </>
-      )}
     </div>
   );
 }

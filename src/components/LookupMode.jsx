@@ -1,6 +1,6 @@
 import { ArrowLeftRight, BookOpenText, History, Search, Sparkles, X } from "lucide-react";
 import { DIR_LABEL, FONT_SERIF } from "../constants";
-import { Breakdown } from "./Breakdown";
+import { Breakdown, Draft } from "./Breakdown";
 import { AiTranslation } from "./AiTranslation";
 import { ResultCard } from "./ResultCard";
 
@@ -112,7 +112,7 @@ function ResultPanel({
         <span>{tgtLabel}</span>
       </div>
 
-      {!query.trim() ? (
+            {!query.trim() ? (
         <div className="flex flex-col gap-3">
           <div className="text-sm leading-relaxed text-stone-400">
             Kết quả tra cứu sẽ hiện ở đây
@@ -121,15 +121,17 @@ function ResultPanel({
         </div>
       ) : (
         <>
+          {showBreakdown && <Draft analysis={analysis} copied={copied} onCopy={onCopy} />}
+
+          <AiTranslation key={`${direction}|${query.trim()}`} text={query.trim()} direction={direction} />
+
           {!hasAnything ? (
-            <div className="text-sm leading-relaxed text-stone-400">
+            <div className="mt-3 text-sm leading-relaxed text-stone-400">
               Không tìm thấy từ phù hợp trong từ điển
             </div>
           ) : (
-            <div className="flex flex-col gap-2.5 overflow-y-auto max-h-80 sm:max-h-[28rem] pr-1">
-              {showBreakdown && (
-                <Breakdown analysis={analysis} onReplace={onReplace} copied={copied} onCopy={onCopy} />
-              )}
+            <div className="mt-3 flex flex-col gap-2.5 overflow-y-auto max-h-80 sm:max-h-[28rem] pr-1">
+              {showBreakdown && <Breakdown analysis={analysis} onReplace={onReplace} />}
               {results.map((g, i) => (
                 <ResultCard
                   key={g.key}
@@ -142,7 +144,6 @@ function ResultPanel({
               ))}
             </div>
           )}
-          <AiTranslation key={`${direction}|${query.trim()}`} text={query.trim()} direction={direction} />
         </>
       )}
     </div>
